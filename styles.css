@@ -48,6 +48,10 @@ a{
     color: #fafafa;
 }
 
+.description{
+    line-height: 25px;
+}
+
 .info{
     display: flex;
     gap: 15px;
@@ -96,6 +100,7 @@ a{
     .perfil {
         flex-direction: column;
         gap: 60px;
+        margin-top: 100px;
   }
   
 }
@@ -134,7 +139,12 @@ a{
     background-color: #fafafa;
     padding: 20px;
     border-radius: 20px;
-    width: clamp(200px,60vw,400px);
+    width: clamp(100px,55vw,350px);
+    transition: .2s;
+}
+
+.project:hover{
+    width: 450px;
 }
 
 .buttons{
@@ -153,7 +163,8 @@ a{
     justify-content: center;
     align-items: center;
     padding: 20px;
-    transition: all 0.3s ease;
+    transition: 0.3s;
+    font-size: 14px;
 }
 
 .btn-visit{
