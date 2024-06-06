@@ -140,7 +140,7 @@ a{
     padding: 20px;
     border-radius: 20px;
     width: clamp(100px,55vw,350px);
-    transition: .2s;
+    transition: all 0.3s ease;
 }
 
 .project:hover{
@@ -163,7 +163,7 @@ a{
     justify-content: center;
     align-items: center;
     padding: 20px;
-    transition: 0.3s;
+    transition: all 0.3s ease;
     font-size: 14px;
 }
 
