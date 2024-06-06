@@ -50,6 +50,7 @@ a{
 
 .description{
     line-height: 25px;
+    white-space: pre;
 }
 
 .info{
