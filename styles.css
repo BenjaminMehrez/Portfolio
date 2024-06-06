@@ -96,7 +96,7 @@ a{
 /* --------- MOVILE --------- */
 
 
-@container perfil (max-width: 1300px) {
+@container perfil (max-width: 1240px) {
 
     .perfil {
         flex-direction: column;
@@ -507,4 +507,14 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* -------- movile ---------- */
+
+
+@media (max-width: 1240px){
+    .section1{
+        height: 110dvh;
+    }
 }
