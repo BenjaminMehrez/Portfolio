@@ -14,6 +14,7 @@ a{
 
 :root{
     --color-primary: #fff;
+    --b-color: #273142;
 }
 
 .container{
@@ -81,9 +82,9 @@ a{
     color: #0e76a8;
 }
 
-.perfil-2,img{
+.perfil-2 img{
     width: clamp(200px,60vw,400px);
-    border: 1px solid #fff;
+    border: 1px solid#fff;
 }
 
 
@@ -430,38 +431,38 @@ button {
 }
 
 .section4-2000{
-    background-color: #273142;
+    background-color: var(--b-color);
     height: 50dvh;
 }
 
 .section4-1210{
-    background-color: #273142;
+    background-color: var(--b-color);
     height: 55dvh;
 }
 
 .section4-1030{
-    background-color: #273142;
+    background-color: var(--b-color);
     height: 60dvh;
 }
 
 .section4-880{
-    background-color: #273142;
+    background-color: var(--b-color);
     height: 75dvh;
 }
 
 .section4-690{
-    background-color: #273142;
+    background-color: var(--b-color);
     height: 85dvh;
 }
 
 .section4-450{
-    background-color: #273142;
+    background-color: var(--b-color);
     height: 90dvh;
     text-align: center;
 }
 
 .section4-400{
-    background-color: #273142;
+    background-color: var(--b-color);
     height: 90dvh;
     text-align: center;
 }
