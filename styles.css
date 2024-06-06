@@ -17,7 +17,7 @@ a{
 }
 
 .container{
-    width: clamp(400px,1300px,1300px);
+    width: clamp(400px,70vw,1300px);
     margin: auto;
 
 }
@@ -29,6 +29,8 @@ a{
     display: flex;
     background-color: #1f1f1f;
     height: 100dvh;
+    container-type: inline-size;
+    container-name: perfil;
 }
 
 .perfil{
@@ -53,7 +55,7 @@ a{
 .perfil-1 a{
     color: #fff;
     width: 100px;
-    padding: 15px;
+    padding: 17px;
     text-align: center;
     border-radius: 6px;
 }
@@ -86,6 +88,19 @@ a{
 }
 
 
+/* --------- MOVILE --------- */
+
+
+@container perfil (max-width: 1300px) {
+
+    .perfil {
+        flex-direction: column;
+        gap: 60px;
+  }
+  
+}
+
+
 /*  ---------- SECTION PROJECTS ------------  */
 
 .section2{
@@ -104,7 +119,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
-    width: clamp(300px,1200px,1400px);
+    width: clamp(300px,70vw,1400px);
     margin: auto;
     justify-content: center;
 }
@@ -195,6 +210,8 @@ a{
 
 .skills{
     margin-block: 130px;
+    container-type: inline-size;
+    container-name: skills;
 }
 
 .skill-title{
@@ -214,6 +231,7 @@ a{
 
 .list{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -235,6 +253,16 @@ a{
     width: 40px;
     height: 40px;
     border: 0px;
+}
+
+
+/* --------- MOVILE -------- */
+
+@container skills (max-width: 750px){
+
+    .frontend{
+
+    }
 }
 
 
@@ -331,15 +359,4 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-/* --------- MOVILE --------- */
-
-
-@media (max-width: 720px){
-    
-    .perfil{
-        flex-direction: column;
-    }
 }
