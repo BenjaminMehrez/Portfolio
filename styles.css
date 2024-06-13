@@ -238,6 +238,15 @@ a{
     
 }
 
+@container proyect (max-width: 410px){
+
+    .project a{
+        margin-inline: 7px;
+    }
+
+    
+}
+
 
 /* ------------- SECTION SKILLS -------------- */
 
@@ -474,26 +483,27 @@ button {
 
 .section4-450{
     background-color: var(--b-color);
-    height: 90dvh;
+    height: 93dvh;
     text-align: center;
 }
 
 .section4-400{
+    display: flex;
     background-color: var(--b-color);
-    height: 90dvh;
+    height: 100dvh;
     text-align: center;
+    font-size: 15px;
+
 }
 
 .movile{
-    width: 80vw;
+    width: 85vw;
     margin: auto;
-    font-size: 14px;
 }
 
 .movile-400{
-    width: 80vw;
+    width: 85vw;
     margin: auto;
-    font-size: 12px;
 
 }
 
