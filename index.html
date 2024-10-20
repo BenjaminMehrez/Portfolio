@@ -14,6 +14,7 @@
     <meta property="og:description" content="This page is a portfolio of Benjamin Mehrez" />
     <meta property="og:image" content="./assets/myphoto.JPG" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="styles.css">
     <title>Benjamin Mehrez</title>
@@ -21,7 +22,7 @@
 <body>
     <section class="section1">
         <div class="perfil container">
-            <div class="perfil-1">
+            <div data-aos="fade-right" class="perfil-1">
                 <h5 class="hello">Hi, my name is</h5>
                 <h2 class="name">Benjamín Mehrez</h2>
                 <p class="description">I am a Back-End Developer, with more
@@ -35,7 +36,7 @@ and tools to deliver high-quality products.</p>
                     <a rel="noreferrer" class="Linkedin" href="https://www.linkedin.com/in/benjamin-mehrez-ab907b30b/" target="_blank">Linkedin</a>
                 </div>
             </div>
-            <div class="perfil-2">
+            <div data-aos="fade-left" class="perfil-2">
                 <img src="/assets/myphoto.JPG"  alt="benjaminmehrez">
             </div>
         </div>
@@ -43,26 +44,26 @@ and tools to deliver high-quality products.</p>
     <section class="section2">
         <div class="section-proyect container">
             <h3 class="pro-title font-bold">Projects</h3>
-                <div class="projects">
-                    <div class="project">
+                <div class="projects flex-row-reverse">
+                    <div class="project" data-aos="fade-up">
                         <div class="img img1"></div>
                         <div class="buttons">
-                            <a rel="noreferrer" target="_blank" href="https://djangofakebook.onrender.com" class="btn-visit">Visit Web</a>
-                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/djangoFakeBook" class="btn-code">Visit Code</a>
+                            <a rel="noreferrer" target="_blank" href="https://benjaadidas.netlify.app/" class="btn-visit">Visit Web</a>
+                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/react-js" class="btn-code">Visit Code</a>
                         </div>
                     </div>
-                    <div class="project">
+                    <div  class="project" data-aos="fade-up">
                         <div class="img img2"></div>
                         <div class="buttons">
                             <a rel="noreferrer" target="_blank" href="https://chatrealtime.up.railway.app/" class="btn-visit">Visit Web</a>
                             <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/ChatRealtime" class="btn-code">Visit Code</a>
                         </div>
                     </div>
-                    <div class="project">
-                        <div class="img img4"></div>
+                    <div class="project" data-aos="fade-up">
+                        <div class="img img3"></div>
                         <div class="buttons">
-                            <a rel="noreferrer" target="_blank" href="https://benjaadidas.netlify.app/" class="btn-visit">Visit Web</a>
-                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/react-js" class="btn-code">Visit Code</a>
+                            <a rel="noreferrer" target="_blank" href="https://djangofakebook.onrender.com" class="btn-visit">Visit Web</a>
+                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/djangoFakeBook" class="btn-code">Visit Code</a>
                         </div>
                     </div>
                 </div>
@@ -75,15 +76,15 @@ and tools to deliver high-quality products.</p>
             <div class="skills-all">
                 <h4 class="title-skill">Back-End</h4>
                 <div class="list">
-                    <div class="language hover:bg-gray-300">
+                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
                         <img src="/assets/nodejs.svg" alt="nodejs">
                         <p>NodeJS</p>
                     </div>
-                    <div class="language hover:bg-gray-300">
+                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
                         <img src="/assets/express.svg" alt="expressjs">
                         <p>ExpressJS</p>
                     </div>
-                    <div class="language hover:bg-gray-300">
+                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
                         <img src="/assets/djangoproject-svgrepo-com.svg" alt="expressjs">
                         <p>Django</p>
                     </div>
@@ -92,11 +93,11 @@ and tools to deliver high-quality products.</p>
             <div class="skills-all">
                 <h4 class="title-skill">Programming Languages</h4>
                 <div class="list">
-                    <div class="language hover:bg-gray-300">
+                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
                         <img src="/assets/python.svg" alt="python">
                         <p>Python</p>
                     </div>
-                    <div class="language hover:bg-gray-300">
+                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
                         <img src="/assets/javascript.svg" alt="python">
                         <p>JavaScript</p>
                     </div>
@@ -105,19 +106,19 @@ and tools to deliver high-quality products.</p>
             <div class="skills-all">
                 <h4 class="title-skill">DataBases</h4>
                 <div class="list">
-                    <div class="language hover:bg-gray-300">
+                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
                         <img src="/assets/postgresql-logo-svgrepo-com.svg" alt="mongodb">
                         <p>Postgresql</p>
                     </div>
-                    <div class="language hover:bg-gray-300">
+                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
                         <img src="/assets/mysql-svgrepo-com.svg" alt="mongodb">
                         <p>MySQL</p>
                     </div>
-                    <div class="language hover:bg-gray-300">
+                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
                         <img src="/assets/sqlite-svgrepo-com.svg" alt="mongodb">
                         <p>SQLite</p>
                     </div>
-                    <div class="language hover:bg-gray-300">
+                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
                         <img src="/assets/mongo.svg" alt="mongodb">
                         <p>MongoDB</p>
                     </div>
@@ -126,15 +127,15 @@ and tools to deliver high-quality products.</p>
             <div class="skills-all">
                 <h4 class="title-skill">Version Control</h4>
                 <div class="list">
-                    <div class="language hover:bg-gray-300">
+                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
                         <img src="/assets/git.svg" alt="git">
                         <p>Git</p>
                     </div>
-                    <div class="language hover:bg-gray-300">
+                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
                         <img src="/assets/github.svg" alt="github">
                         <p>GitHub</p>
                     </div>
-                    <div class="language hover:bg-gray-300">
+                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
                         <img src="/assets/linux-svgrepo-com.svg" alt="github">
                         <p>Linux</p>
                     </div>
@@ -156,5 +157,9 @@ and tools to deliver high-quality products.</p>
     </footer>
 
 <script src="main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
