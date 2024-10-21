@@ -15,149 +15,176 @@
     <meta property="og:image" content="./assets/myphoto.JPG" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="styles.css">
     <title>Benjamin Mehrez</title>
 </head>
 <body>
-    <section class="section1">
-        <div class="perfil container">
-            <div data-aos="fade-right" class="perfil-1">
-                <h5 class="hello">Hi, my name is</h5>
-                <h2 class="name">Benjamín Mehrez</h2>
-                <p class="description">I am a Back-End Developer, with more
+    <section class="flex bg-zinc-900 text-white md:min-h-dvh">
+        <div class="flex flex-col gap-20 max-w-screen-2xl md:items-center justify-center m-auto xl:gap-80 md:flex-row px-12 py-20 xl:p-0">
+            <div data-aos="fade-right" class="">
+                <h5 class="py-4">Hi, my name is</h5>
+                <h2 class="pb-4">Benjamín Mehrez</h2>
+                <p class="max-w-sm">I am a Back-End Developer, with more
 than 2 years of experience creating and 
 maintaining web applications. Expert in 
 implementing complete solutions,
 server-side, and integrating various technologies
 and tools to deliver high-quality products.</p>
-                <div class="info">
-                    <a rel="noreferrer" class="GitHub" href="https://github.com/BenjaminMehrez" target="_blank">GitHub</a>
-                    <a rel="noreferrer" class="Linkedin" href="https://www.linkedin.com/in/benjamin-mehrez-ab907b30b/" target="_blank">Linkedin</a>
+                <div class="mt-12 space-x-3">
+                    <a rel="noreferrer" class="bg-black hover:bg-zinc-950 transition p-4 rounded font-bold transition duration-300" href="https://github.com/BenjaminMehrez" target="_blank">GitHub</a>
+                    <a rel="noreferrer" class="bg-sky-600 hover:bg-sky-500 p-4 rounded font-bold duration-300" href="https://www.linkedin.com/in/benjamin-mehrez-ab907b30b/" target="_blank">Linkedin</a>
                 </div>
             </div>
-            <div data-aos="fade-left" class="perfil-2">
-                <img src="/assets/myphoto.JPG"  alt="benjaminmehrez">
+            <div data-aos="fade-left" class="border max-w-sm">
+                <img class="" src="/assets/myphoto.JPG"  alt="benjaminmehrez">
             </div>
         </div>
     </section>
-    <section class="section2">
-        <div class="section-proyect container">
-            <h3 class="pro-title font-bold">Projects</h3>
-                <div class="projects flex-row-reverse">
-                    <div class="project" data-aos="fade-up">
-                        <div class="img img1"></div>
-                        <div class="buttons">
-                            <a rel="noreferrer" target="_blank" href="https://benjaadidas.netlify.app/" class="btn-visit">Visit Web</a>
-                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/react-js" class="btn-code">Visit Code</a>
+    <section class="bg-gray-200 text-center md:text-start md:min-h-dvh">
+        <div class="flex flex-col px-4 py-20 ">
+                <h1 class="font-bold text-3xl text-gray-800 underline md:pl-80">Projects</h1>
+                <div class="flex flex-wrap-reverse justify-center flex-col-reverse md:flex-row-reverse m-auto gap-20 p-10 max-w-7xl md:mt-20 text-center">
+                    <div class="max-w-md p-2 rounded bg-white space-y-8 shadow-xl" data-aos="fade-up">
+                        <img class="rounded brightness-50 pb-5" src="./assets/trabajo1.png">
+                        <div class="space-x-4 pb-10">
+                            <a rel="noreferrer" target="_blank" href="https://web-benjaminmehrez.netlify.app/" class="duration-200 hover:underline bg-blue-950 text-white p-2 md:p-4 rounded btn-visit transition hover:bg-blue-900 font-bold">Visit Web</a>
+                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/Web-nature" class="duration-200 hover:underline bg-black text-white p-2 md:p-4 rounded btn-code hover:bg-gray-800 font-bold transition">Visit Code</a>
                         </div>
                     </div>
-                    <div  class="project" data-aos="fade-up">
-                        <div class="img img2"></div>
-                        <div class="buttons">
-                            <a rel="noreferrer" target="_blank" href="https://chatrealtime.up.railway.app/" class="btn-visit">Visit Web</a>
-                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/ChatRealtime" class="btn-code">Visit Code</a>
+                    <div class="max-w-md p-2 rounded bg-white space-y-8 shadow-xl" data-aos="fade-up">
+                        <img class="rounded brightness-50 pb-5" src="./assets/trabajo2.png">
+                        <div class="space-x-4 pb-10">
+                            <a rel="noreferrer" target="_blank" href="https://pagecss-benjaminmehrez.netlify.app/" class="duration-200 hover:underline bg-blue-950 text-white p-2 md:p-4 rounded btn-visit transition hover:bg-blue-900 font-bold">Visit Web</a>
+                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/paginacss" class="duration-200 hover:underline bg-black text-white p-2 md:p-4 rounded btn-code hover:bg-gray-800 font-bold transition">Visit Code</a>
                         </div>
                     </div>
-                    <div class="project" data-aos="fade-up">
-                        <div class="img img3"></div>
-                        <div class="buttons">
-                            <a rel="noreferrer" target="_blank" href="https://djangofakebook.onrender.com" class="btn-visit">Visit Web</a>
-                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/djangoFakeBook" class="btn-code">Visit Code</a>
+                    <div class="max-w-md p-2 rounded bg-white space-y-8 shadow-xl" data-aos="fade-up">
+                        <img class="rounded brightness-50 pb-5" src="./assets/trabajo3.png">
+                        <div class="space-x-4 pb-10">
+                            <a rel="noreferrer" target="_blank" href="https://chatrealtime.up.railway.app/" class="duration-200 hover:underline bg-blue-950 text-white p-2 md:p-4 rounded btn-visit transition hover:bg-blue-900 font-bold">Visit Web</a>
+                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/ChatRealtime" class="duration-200 hover:underline bg-black text-white p-2 md:p-4 rounded btn-code hover:bg-gray-800 font-bold transition">Visit Code</a>
+                        </div>
+                    </div>
+                    <div class="max-w-md p-2 rounded bg-white space-y-8 shadow-xl" data-aos="fade-up">
+                        <img class="rounded brightness-50 pb-5" src="./assets/trabajo4.png">
+                        <div class="space-x-4 pb-10">
+                            <a rel="noreferrer" target="_blank" href="https://djangofakebook.onrender.com" class="duration-200 hover:underline bg-blue-950 text-white p-2 md:p-4 rounded btn-visit transition hover:bg-blue-900 font-bold">Visit Web</a>
+                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/djangoFakeBook" class="duration-200 hover:underline bg-black text-white p-2 md:p-4 rounded btn-code hover:bg-gray-800 font-bold transition">Visit Code</a>
                         </div>
                     </div>
                 </div>
         </div>
     </section>
-    <section class="section3">
-        <div class="skills container">
-            <h3 class="skill-title">Skills</h3>
-            <p class="skill-text">I've been writing code since 2022, developing various personal projects while I'm self-taught in programming languages and frameworks.</p>
-            <div class="skills-all">
-                <h4 class="title-skill">Back-End</h4>
-                <div class="list">
-                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
-                        <img src="/assets/nodejs.svg" alt="nodejs">
-                        <p>NodeJS</p>
+    <section class="p-12 text-center md:text-start">
+        <div class="space-y-12 py-10 max-w-7xl m-auto">
+            <h3 class="font-bold text-3xl text-gray-800 underline">Skills</h3>
+            <p class="">I've been writing code since 2022, developing various personal projects while I'm self-taught in programming languages and frameworks.</p>
+            <div class="">
+                <h4 class="underline text-2xl mt-10 mb-7">Back-End</h4>
+                <div class="md:flex items-center space-y-8 md:space-x-5 md:space-y-0">
+                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                        <img class="w-10" src="/assets/nodejs.svg" alt="nodejs">
+                        <p class="font-bold">NodeJS</p>
                     </div>
-                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
-                        <img src="/assets/express.svg" alt="expressjs">
-                        <p>ExpressJS</p>
+                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                        <img class="w-10" src="/assets/express.svg" alt="expressjs">
+                        <p class="font-bold">ExpressJS</p>
                     </div>
-                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
-                        <img src="/assets/djangoproject-svgrepo-com.svg" alt="expressjs">
-                        <p>Django</p>
+                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                        <img class="w-10" src="/assets/djangoproject-svgrepo-com.svg" alt="expressjs">
+                        <p class="font-bold">Django</p>
                     </div>
                 </div>
             </div>
-            <div class="skills-all">
-                <h4 class="title-skill">Programming Languages</h4>
-                <div class="list">
-                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
-                        <img src="/assets/python.svg" alt="python">
+            <div class="">
+                <h4 class="underline text-2xl mt-10 mb-7">Programming Languages</h4>
+                <div class="md:flex items-center space-y-8 md:space-x-5 md:space-y-0">
+                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                        <img class="w-10" src="/assets/python.svg" alt="python">
                         <p>Python</p>
                     </div>
-                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
-                        <img src="/assets/javascript.svg" alt="python">
+                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                        <img class="w-10" src="/assets/javascript.svg" alt="python">
                         <p>JavaScript</p>
                     </div>
                 </div>
             </div>
-            <div class="skills-all">
-                <h4 class="title-skill">DataBases</h4>
-                <div class="list">
-                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
-                        <img src="/assets/postgresql-logo-svgrepo-com.svg" alt="mongodb">
+            <div class="">
+                <h4 class="underline text-2xl mt-10 mb-7">DataBases</h4>
+                <div class="md:flex items-center space-y-8 md:space-x-5 md:space-y-0">
+                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                        <img class="w-10" src="/assets/postgresql-logo-svgrepo-com.svg" alt="mongodb">
                         <p>Postgresql</p>
                     </div>
-                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
-                        <img src="/assets/mysql-svgrepo-com.svg" alt="mongodb">
+                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                        <img class="w-10" src="/assets/mysql-svgrepo-com.svg" alt="mongodb">
                         <p>MySQL</p>
                     </div>
-                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
-                        <img src="/assets/sqlite-svgrepo-com.svg" alt="mongodb">
+                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                        <img class="w-10" src="/assets/sqlite-svgrepo-com.svg" alt="mongodb">
                         <p>SQLite</p>
                     </div>
-                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
-                        <img src="/assets/mongo.svg" alt="mongodb">
+                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                        <img class="w-10" src="/assets/mongo.svg" alt="mongodb">
                         <p>MongoDB</p>
                     </div>
                 </div>
             </div>
-            <div class="skills-all">
-                <h4 class="title-skill">Version Control</h4>
-                <div class="list">
-                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
-                        <img src="/assets/git.svg" alt="git">
+            <div class="">
+                <h4 class="underline text-2xl mt-10 mb-7">Version Control</h4>
+                <div class="md:flex items-center space-y-8 md:space-x-5 md:space-y-0">
+                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                        <img class="w-10" src="/assets/git.svg" alt="git">
                         <p>Git</p>
                     </div>
-                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
-                        <img src="/assets/github.svg" alt="github">
+                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                        <img class="w-10" src="/assets/github.svg" alt="github">
                         <p>GitHub</p>
                     </div>
-                    <div class="language hover:bg-gray-300" data-aos="zoom-in">
-                        <img src="/assets/linux-svgrepo-com.svg" alt="github">
+                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                        <img class="w-10" src="/assets/linux-svgrepo-com.svg" alt="github">
                         <p>Linux</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section4">
-        <div class="experience container">
-            <h3 class="experience-title">Experience</h3>
-            <div class="text">
-                <p id="short-text" class="experience-text">Although to date I have not had the opportunity to gain formal work experience, I would like to highlight my deep motivation and desire to learn and develop professionally...</p>
-                <p id="full-text" class="hidden">I have always had a great passion for Web Developer. During my free time, I have dedicated many hours to self-study and participation in personal projects that have allowed me to acquire valuable knowledge and relevant skills. I have completed several online courses that have given me a solid foundation. I am a committed, responsible and very enthusiastic person. I firmly believe that attitude and willingness to learn are critical to success in any field. I am willing to take on any challenge and invest the time and effort necessary to acquire the skills required for the position. I am very interested in the possibility of joining your team and contributing my energy and dedication. I am confident that with the right guidance and my strong desire to learn, I can become a valuable member of your organization. I thank you in advance for the opportunity to be considered for this position. I remain at your disposal to provide any additional information or for an interview in which I can expand details about my motivations and aspirations.</p><button><a class="btn2"><span id="toggle-button">See more</span></a></button>
+    <section class="bg-zinc-950 text-white p-12">
+        <div class="md:px-60">
+            <h3 class="underline text-3xl mt-10 mb-7">Experience</h3>
+            <div class="">
+                <p id="texto" class="">Although to date I have not had the opportunity to gain formal work experience, I would like to highlight my deep motivation and desire to learn and develop professionally...</p>
+                <button class="py-2 font-bold underline" hx-get="/mas-texto" hx-target="#contenido-extra" hx-swap="beforeend" id="boton">See More</button>
+                <div id="contenido-extra"></div>
+                <div style="display:none;" id="servidor">
+                    <p>I have always had a great passion for Web Developer. During my free time, I have dedicated many hours to self-study and participation in personal projects that have allowed me to acquire valuable knowledge and relevant skills. I have completed several online courses that have given me a solid foundation. I am a committed, responsible and very enthusiastic person. I firmly believe that attitude and willingness to learn are critical to success in any field. I am willing to take on any challenge and invest the time and effort necessary to acquire the skills required for the position. I am very interested in the possibility of joining your team and contributing my energy and dedication. I am confident that with the right guidance and my strong desire to learn, I can become a valuable member of your organization. I thank you in advance for the opportunity to be considered for this position. I remain at your disposal to provide any additional information or for an interview in which I can expand details about my motivations and aspirations.</p>
+                </div>
             </div>
         </div>
     </section>
-    <footer>
-        <p>&copy;Benjamin Mehrez</p>
+    <footer class="bg-black text-white flex justify-center items-center h-60">
+        <p class="font-bold text-1xl">&copy;Benjamin Mehrez</p>
     </footer>
 
-<script src="main.js"></script>
+
+<script src="/main.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Simulamos la respuesta del servidor
+    document.querySelector('button').addEventListener('click', function(event) {
+        event.preventDefault(); // Evita el comportamiento predeterminado
+
+        // Simulamos la obtención del contenido desde el "servidor"
+        const contenido = document.querySelector('#servidor').innerHTML;
+
+        // Agregamos el contenido dinámicamente al div destino
+        document.querySelector('#contenido-extra').innerHTML += contenido;
+        
+        this.style.display = 'none';
+    });
+</script>
 <script>
     AOS.init();
   </script>
