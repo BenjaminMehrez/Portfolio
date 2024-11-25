@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth focus:scroll-auto">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
     <title>Benjamin Mehrez</title>
 </head>
 <body>
-    <section class="flex bg-zinc-900 text-white md:min-h-dvh">
+    <section class="flex bg-zinc-900 text-white mx-auto md:min-h-dvh">
         <div class="flex flex-col gap-20 max-w-screen-2xl md:items-center justify-center m-auto xl:gap-80 md:flex-row px-12 py-20 xl:p-0">
             <div data-aos="fade-right" class="">
                 <h5 class="py-4">Hi, my name is</h5>
@@ -52,38 +52,88 @@ and tools to deliver high-quality products.</p>
             <div data-aos="fade-left" class="border max-w-sm">
                 <img class="" src="/assets/myphoto.JPG"  alt="benjaminmehrez">
             </div>
+            <a class="hidden md:flex gap-4 ml-4 absolute bottom-10 righ-2/3 text-white text-2xl animate-bounce" href="#projects">Projects <img src="./assets/arrowdown.svg" class="w-6"></a>
         </div>
     </section>
-    <section class="bg-gray-200 text-center md:text-start md:min-h-dvh">
+    <section id="projects" class="bg-gray-200 text-center md:text-start md:min-h-dvh">
         <div class="flex flex-col px-4 py-20 ">
                 <h1 class="font-bold text-3xl text-gray-800 underline md:pl-80">Projects</h1>
                 <div class="flex flex-wrap-reverse justify-center flex-col-reverse md:flex-row-reverse m-auto gap-20 p-10 max-w-7xl md:mt-20 text-center">
                     <div class="max-w-md p-2 rounded bg-white space-y-8 shadow-xl" data-aos="fade-up">
                         <img class="rounded brightness-50 pb-5" src="./assets/trabajo1.png">
-                        <div class="space-x-4 pb-10">
+                        <div class="space-x-4 pb-10 sm:pb-0">
                             <a rel="noreferrer" target="_blank" href="https://web-benjaminmehrez.netlify.app/" class="duration-200 hover:underline bg-blue-950 text-white p-3 md:p-4 rounded btn-visit transition hover:bg-blue-900 font-bold">Visit Web</a>
                             <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/Web-nature" class="duration-200 hover:underline bg-black text-white p-3 md:p-4 rounded btn-code hover:bg-gray-800 font-bold transition">Visit Code</a>
+                        </div>
+                        <div class="hidden sm:flex flex-wrap justify-center gap-3 p-5">
+                            <img src="./assets/html-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/css-b.svg" alt="logo-project" class="w-6">
                         </div>
                     </div>
                     <div class="max-w-md p-2 rounded bg-white space-y-8 shadow-xl" data-aos="fade-up">
                         <img class="rounded brightness-50 pb-5" src="./assets/trabajo2.png">
-                        <div class="space-x-4 pb-10">
+                        <div class="space-x-4 pb-10 sm:pb-0">
                             <a rel="noreferrer" target="_blank" href="https://pagecss-benjaminmehrez.netlify.app/" class="duration-200 hover:underline bg-blue-950 text-white p-3 md:p-4 rounded btn-visit transition hover:bg-blue-900 font-bold">Visit Web</a>
                             <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/paginacss" class="duration-200 hover:underline bg-black text-white p-3 md:p-4 rounded btn-code hover:bg-gray-800 font-bold transition">Visit Code</a>
+                        </div>
+                        <div class="hidden sm:flex flex-wrap justify-center gap-3 p-5">
+                            <img src="./assets/html-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/css-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/javascript-b.svg" alt="logo-project" class="w-6">
                         </div>
                     </div>
                     <div class="max-w-md p-2 rounded bg-white space-y-8 shadow-xl" data-aos="fade-up">
                         <img class="rounded brightness-50 pb-5" src="./assets/trabajo3.png">
-                        <div class="space-x-4 pb-10">
+                        <div class="space-x-4 pb-10 sm:pb-0">
                             <a rel="noreferrer" target="_blank" href="https://chatrealtime.up.railway.app/" class="duration-200 hover:underline bg-blue-950 text-white p-3 md:p-4 rounded btn-visit transition hover:bg-blue-900 font-bold">Visit Web</a>
                             <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/ChatRealtime" class="duration-200 hover:underline bg-black text-white p-3 md:p-4 rounded btn-code hover:bg-gray-800 font-bold transition">Visit Code</a>
+                        </div>
+                        <div class="hidden sm:flex flex-wrap justify-center gap-3 p-5">
+                            <img src="./assets/python-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/django-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/nodejs-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/git-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/github-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/tailwind-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/htmx-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/javascript-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/postgres-b.svg" alt="logo-project" class="w-6">
                         </div>
                     </div>
                     <div class="max-w-md p-2 rounded bg-white space-y-8 shadow-xl" data-aos="fade-up">
                         <img class="rounded brightness-50 pb-5" src="./assets/trabajo4.png">
-                        <div class="space-x-4 pb-10">
+                        <div class="space-x-4 pb-10 sm:pb-0">
                             <a rel="noreferrer" target="_blank" href="https://djangofakebook.up.railway.app/" class="duration-200 hover:underline bg-blue-950 text-white p-3 md:p-4 rounded btn-visit transition hover:bg-blue-900 font-bold">Visit Web</a>
                             <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/djangoFakeBook" class="duration-200 hover:underline bg-black text-white p-3 md:p-4 rounded btn-code hover:bg-gray-800 font-bold transition">Visit Code</a>
+                        </div>
+                        <div class="hidden sm:flex flex-wrap justify-center gap-3 p-5">
+                            <img src="./assets/python-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/django-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/nodejs-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/git-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/github-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/tailwind-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/htmx-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/javascript-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/postgres-b.svg" alt="logo-project" class="w-6">
+                        </div>
+                    </div>
+                    <div class="max-w-md p-2 rounded bg-white space-y-8 shadow-xl" data-aos="fade-up">
+                        <img class="rounded brightness-50 pb-5" src="./assets/trabajo5.png">
+                        <div class="space-x-4 pb-10 sm:pb-0">
+                            <a rel="noreferrer" target="_blank" href="https://ecommercemehrez.up.railway.app/" class="duration-200 hover:underline bg-blue-950 text-white p-3 md:p-4 rounded btn-visit transition hover:bg-blue-900 font-bold">Visit Web</a>
+                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/Ecommerce" class="duration-200 hover:underline bg-black text-white p-3 md:p-4 rounded btn-code hover:bg-gray-800 font-bold transition">Visit Code</a>
+                        </div>
+                        <div class="hidden sm:flex flex-wrap justify-center gap-3 p-5">
+                            <img src="./assets/python-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/django-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/nodejs-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/git-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/github-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/tailwind-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/htmx-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/javascript-b.svg" alt="logo-project" class="w-6">
+                            <img src="./assets/postgres-b.svg" alt="logo-project" class="w-6">
                         </div>
                     </div>
                 </div>
