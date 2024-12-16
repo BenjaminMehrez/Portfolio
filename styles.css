@@ -2,11 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #fff;
 }
 
 body{
     font-family: 'Montserrat'; 
+    background: rgb(9,25,53);
+    background: radial-gradient(circle at center top, rgba(26,9,53,1) 2%, rgba(9,5,18,1) 15%);
 }
+
+.text-color{
+    color: #9e35f5;
+}
+
+.bg-color{
+    background-color: #11091a;
+}
+
+.underline-color {
+    border-color: #9e35f5;
+}
+
+.card{
+    background: #11091a;
+    max-width: 480px;
+}
+
+.card-prm{
+    background-color: #11091a;
+    transition: all 2s ease-in-out;
+}
+
+.card-prm:hover{
+    transition: all 2s ease-in-out;
+    background-color: #0a050f;
+}
+
 
 a{
     text-decoration: none;

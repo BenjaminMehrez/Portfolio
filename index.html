@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth focus:scroll-auto">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,248 +21,315 @@
     <link rel="stylesheet" href="styles.css">
     <title>Benjamin Mehrez</title>
 </head>
+
 <body>
-    <section class="flex bg-zinc-900 text-white mx-auto md:min-h-dvh">
-        <div class="flex flex-col gap-20 max-w-screen-2xl md:items-center justify-center m-auto xl:gap-80 md:flex-row px-12 py-20 xl:p-0">
+    <header x-data="{mobilenavOpen: false}" x-cloak class="px-12 lg:px-0 backdrop-blur-lg bg-dark-200/30 dark:bg-dark-900/30 fixed w-full z-20 top-0 left-0">
+        <nav class="h-16 max-w-6xl mx-auto flex items-center justify-between">
+            <h1 class="hidden md:block text-xl font-bold border-b-2 border-transparent hover:border-purple-600 transition duration-300"><a href="#home" class="">Benjamin <span class="text-color">Mehrez</span></a>
+            </h1>
+            <h1 class="md:hidden text-xl font-bold border-b-2 border-transparent hover:border-purple-600 transition duration-300"><a href="#home" class="">B<span class="text-color">M</span></a>
+            </h1>
+            <div class="flex gap-10 font-semibold items-center">
+                <a href="#projects" class="border-b-2 border-transparent hover:border-purple-600 transition duration-300">Projects</a>
+                <a href="#skills" class="border-b-2 border-transparent hover:border-purple-600 transition duration-300">Skills</a>
+                <a href="https://www.linkedin.com/in/benjamin-mehrez-ab907b30b/" class="hidden md:block w-5 border-b-2 border-transparent pb-2 hover:border-purple-600 transition duration-300" target="_blank"><img src="./assets/linkedin.svg" alt="linkedin"></a>
+                <a href="https://github.com/BenjaminMehrez" class="hidden md:block w-5 border-b-2 border-transparent pb-2 hover:border-purple-600 transition duration-300" target="_blank"><img src="./assets/github.svg" alt="github"></a>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="max-w-screen-lg flex mx-auto md:min-h-dvh">
+        <div class="flex flex-col gap-20 items-center justify-center m-auto xl:gap-80 md:flex-row px-12 py-20 xl:p-0">
             <div data-aos="fade-right" class="">
-                <h5 class="py-4">Hi, my name is</h5>
-                <h2 class="pb-4">Benjamín Mehrez</h2>
-                <p class="max-w-sm">I am a Back-End Developer, with more
-than 2 years of experience creating and 
-maintaining web applications. Expert in 
-implementing complete solutions,
-server-side, and integrating various technologies
-and tools to deliver high-quality products.</p>
+                <h5 class="py-4 font-semibold">Hi, my name is <span class="text-color text-lg">Benjamin Mehrez</span>
+                </h5>
+                <p class="font-semibold leading-loose">I am a Back-End Developer, with more than 2 years of
+                    experience creating and maintaining web applications. Expert in implementing complete
+                    solutions, server-side, and integrating various technologiesand tools to deliver high-quality
+                    products.</p>
                 <div class="flex mt-12 space-x-3">
-                    <a rel="noreferrer" href="https://github.com/BenjaminMehrez" target="_blank" class="flex overflow-hidden items-center text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-white shadow hover:bg-black/90 h-12 px-4 py-2 max-w-52 whitespace-pre md:flex group relative w-full justify-center gap-2 rounded-md transition-all duration-300 ease-out hover:ring-2 hover:ring-black hover:ring-offset-2">
-                        <span class="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-40"></span>
+                    <a rel="noreferrer" href="https://github.com/BenjaminMehrez" target="_blank"
+                        class="flex overflow-hidden items-center text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black shadow hover:bg-black/90 h-12 px-4 py-2 max-w-52 whitespace-pre md:flex group relative w-full justify-center gap-2 rounded-md transition-all duration-300 ease-out hover:ring-2 hover:ring-black hover:ring-offset-2">
+                        <span
+                            class="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-40"></span>
                         <div class="flex items-center">
                             <svg class="w-4 h-4 fill-current" viewBox="0 0 438.549 438.549">
-                            <path d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"></path>
+                                <path
+                                    d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z">
+                                </path>
                             </svg>
-                            <span class="ml-1 text-white">GitHub</span>
+                            <span class="ml-1">GitHub</span>
                         </div>
                     </a>
-                    <a rel="noreferrer" href="https://www.linkedin.com/in/benjamin-mehrez-ab907b30b/" target="_blank" class="group w-12 hover:w-44 h-12 hover:bg-sky-600 relative bg-sky-700 rounded text-neutral-50 duration-700 before:duration-700 before:hover:500 font-bold flex justify-start gap-2 items-center p-2 pr-6 before:absolute before:-z-10 before:left-8 before:hover:left-40 before:w-6 before:h-6 before:bg-sky-700 before:hover:bg-sky-600 before:rotate-45">
-                        <svg y="0" xmlns="http://www.w3.org/2000/svg" x="0" width="100" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" height="100" class="w-8 h-8 shrink-0 fill-neutral-50">
-                        <path d="M92.86,0H7.12A7.17,7.17,0,0,0,0,7.21V92.79A7.17,7.17,0,0,0,7.12,100H92.86A7.19,7.19,0,0,0,100,92.79V7.21A7.19,7.19,0,0,0,92.86,0ZM30.22,85.71H15.4V38H30.25V85.71ZM22.81,31.47a8.59,8.59,0,1,1,8.6-8.59A8.6,8.6,0,0,1,22.81,31.47Zm63,54.24H71V62.5c0-5.54-.11-12.66-7.7-12.66s-8.91,6-8.91,12.26V85.71H39.53V38H53.75v6.52H54c2-3.75,6.83-7.7,14-7.7,15,0,17.79,9.89,17.79,22.74Z"></path></svg>
-                        <span class="origin-left inline-flex duration-100 group-hover:duration-300 group-hover:delay-500 opacity-0 group-hover:opacity-100 border-l-2 px-1 transform scale-x-0 group-hover:scale-x-100 transition-all">Benjamin Mehrez</span>
+                    <a rel="noreferrer" href="https://www.linkedin.com/in/benjamin-mehrez-ab907b30b/" target="_blank"
+                        class="group w-12 hover:w-44 h-12 hover:bg-sky-600 relative bg-sky-700 rounded text-neutral-50 duration-700 before:duration-700 before:hover:500 font-bold flex justify-start gap-2 items-center p-2 pr-6 before:absolute before:-z-10 before:left-8 before:hover:left-40 before:w-6 before:h-6 before:bg-sky-700 before:hover:bg-sky-600 before:rotate-45">
+                        <svg y="0" xmlns="http://www.w3.org/2000/svg" x="0" width="100" viewBox="0 0 100 100"
+                            preserveAspectRatio="xMidYMid meet" height="100" class="w-8 h-8 shrink-0 fill-neutral-50">
+                            <path
+                                d="M92.86,0H7.12A7.17,7.17,0,0,0,0,7.21V92.79A7.17,7.17,0,0,0,7.12,100H92.86A7.19,7.19,0,0,0,100,92.79V7.21A7.19,7.19,0,0,0,92.86,0ZM30.22,85.71H15.4V38H30.25V85.71ZM22.81,31.47a8.59,8.59,0,1,1,8.6-8.59A8.6,8.6,0,0,1,22.81,31.47Zm63,54.24H71V62.5c0-5.54-.11-12.66-7.7-12.66s-8.91,6-8.91,12.26V85.71H39.53V38H53.75v6.52H54c2-3.75,6.83-7.7,14-7.7,15,0,17.79,9.89,17.79,22.74Z">
+                            </path>
+                        </svg>
+                        <span
+                            class="origin-left inline-flex duration-100 group-hover:duration-300 group-hover:delay-500 opacity-0 group-hover:opacity-100 border-l-2 px-1 transform scale-x-0 group-hover:scale-x-100 transition-all">Benjamin
+                            Mehrez</span>
                     </a>
                 </div>
             </div>
-            <div data-aos="fade-left" class="border max-w-sm">
-                <img class="" src="/assets/myphoto.JPG"  alt="benjaminmehrez">
+            <div data-aos="fade-left" class="border-2 border-purple-600 max-w-sm">
+                <img class="" src="/assets/myphoto.JPG" alt="benjaminmehrez">
             </div>
-            <a class="hidden md:flex gap-4 ml-4 absolute bottom-10 righ-2/3 text-white text-2xl animate-bounce" href="#projects">Projects <img src="./assets/arrowdown.svg" class="w-6"></a>
-        </div>
+            <a class="hidden md:flex gap-4 ml-4 absolute bottom-10 righ-2/3 text-2xl animate-bounce hover:text-purple-600"
+                href="#projects">Projects <img src="./assets/arrowdown.svg" class="w-6"></a>
+            </div>
     </section>
-    <section id="projects" class="bg-gray-200 text-center md:text-start md:min-h-dvh">
-        <div class="flex flex-col px-4 py-20 ">
-                <h1 class="font-bold text-3xl text-gray-800 underline md:pl-80">Projects</h1>
-                <div class="flex flex-wrap-reverse justify-center flex-col-reverse md:flex-row-reverse m-auto gap-20 p-10 max-w-7xl md:mt-20 text-center">
-                    <div class="max-w-md p-2 rounded bg-white space-y-8 shadow-xl" data-aos="fade-up">
-                        <img class="rounded brightness-50 pb-5" src="./assets/trabajo1.png">
-                        <div class="space-x-4 pb-10 sm:pb-0">
-                            <a rel="noreferrer" target="_blank" href="https://web-benjaminmehrez.netlify.app/" class="duration-200 hover:underline bg-blue-950 text-white p-3 md:p-4 rounded btn-visit transition hover:bg-blue-900 font-bold">Visit Web</a>
-                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/Web-nature" class="duration-200 hover:underline bg-black text-white p-3 md:p-4 rounded btn-code hover:bg-gray-800 font-bold transition">Visit Code</a>
-                        </div>
-                        <div class="hidden sm:flex flex-wrap justify-center gap-3 p-5">
-                            <img src="./assets/html-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/css-b.svg" alt="logo-project" class="w-6">
-                        </div>
-                    </div>
-                    <div class="max-w-md p-2 rounded bg-white space-y-8 shadow-xl" data-aos="fade-up">
-                        <img class="rounded brightness-50 pb-5" src="./assets/trabajo2.png">
-                        <div class="space-x-4 pb-10 sm:pb-0">
-                            <a rel="noreferrer" target="_blank" href="https://pagecss-benjaminmehrez.netlify.app/" class="duration-200 hover:underline bg-blue-950 text-white p-3 md:p-4 rounded btn-visit transition hover:bg-blue-900 font-bold">Visit Web</a>
-                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/paginacss" class="duration-200 hover:underline bg-black text-white p-3 md:p-4 rounded btn-code hover:bg-gray-800 font-bold transition">Visit Code</a>
-                        </div>
-                        <div class="hidden sm:flex flex-wrap justify-center gap-3 p-5">
-                            <img src="./assets/html-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/css-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/javascript-b.svg" alt="logo-project" class="w-6">
-                        </div>
-                    </div>
-                    <div class="max-w-md p-2 rounded bg-white space-y-8 shadow-xl" data-aos="fade-up">
-                        <img class="rounded brightness-50 pb-5" src="./assets/trabajo3.png">
-                        <div class="space-x-4 pb-10 sm:pb-0">
-                            <a rel="noreferrer" target="_blank" href="https://chatrealtime.up.railway.app/" class="duration-200 hover:underline bg-blue-950 text-white p-3 md:p-4 rounded btn-visit transition hover:bg-blue-900 font-bold">Visit Web</a>
-                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/ChatRealtime" class="duration-200 hover:underline bg-black text-white p-3 md:p-4 rounded btn-code hover:bg-gray-800 font-bold transition">Visit Code</a>
-                        </div>
-                        <div class="hidden sm:flex flex-wrap justify-center gap-3 p-5">
-                            <img src="./assets/python-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/django-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/nodejs-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/git-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/github-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/tailwind-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/htmx-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/javascript-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/postgres-b.svg" alt="logo-project" class="w-6">
-                        </div>
-                    </div>
-                    <div class="max-w-md p-2 rounded bg-white space-y-8 shadow-xl" data-aos="fade-up">
-                        <img class="rounded brightness-50 pb-5" src="./assets/trabajo4.png">
-                        <div class="space-x-4 pb-10 sm:pb-0">
-                            <a rel="noreferrer" target="_blank" href="https://djangofakebook.up.railway.app/" class="duration-200 hover:underline bg-blue-950 text-white p-3 md:p-4 rounded btn-visit transition hover:bg-blue-900 font-bold">Visit Web</a>
-                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/djangoFakeBook" class="duration-200 hover:underline bg-black text-white p-3 md:p-4 rounded btn-code hover:bg-gray-800 font-bold transition">Visit Code</a>
-                        </div>
-                        <div class="hidden sm:flex flex-wrap justify-center gap-3 p-5">
-                            <img src="./assets/python-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/django-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/nodejs-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/git-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/github-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/tailwind-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/htmx-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/javascript-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/postgres-b.svg" alt="logo-project" class="w-6">
-                        </div>
-                    </div>
-                    <div class="max-w-md p-2 rounded bg-white space-y-8 shadow-xl" data-aos="fade-up">
-                        <img class="rounded brightness-50 pb-5" src="./assets/trabajo5.png">
-                        <div class="space-x-4 pb-10 sm:pb-0">
-                            <a rel="noreferrer" target="_blank" href="https://ecommercemehrez.up.railway.app/" class="duration-200 hover:underline bg-blue-950 text-white p-3 md:p-4 rounded btn-visit transition hover:bg-blue-900 font-bold">Visit Web</a>
-                            <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/Ecommerce" class="duration-200 hover:underline bg-black text-white p-3 md:p-4 rounded btn-code hover:bg-gray-800 font-bold transition">Visit Code</a>
-                        </div>
-                        <div class="hidden sm:flex flex-wrap justify-center gap-3 p-5">
-                            <img src="./assets/python-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/django-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/nodejs-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/git-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/github-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/tailwind-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/htmx-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/javascript-b.svg" alt="logo-project" class="w-6">
-                            <img src="./assets/postgres-b.svg" alt="logo-project" class="w-6">
-                        </div>
+    <section id="projects" class="max-w-screen-lg mx-auto mt-16 px-12 xl:px-0">
+        <h1 class="font-bold text-3xl underline">Projects</h1>
+        <p class="font-semibold mt-4">In this collection, you'll find some of my most recent projects, which stand out for their creativity, focus on problem-solving, and meticulous attention to detail. Each one tells a story: from overcoming technical challenges to turning innovative ideas into functional tools that really make a difference.</p>
+        <div class="flex flex-wrap justify-center xl:justify-between mt-10 gap-10">
+            <div class="p-7 rounded-xl card space-y-8 shadow-xl" data-aos="fade-up">
+                <img class="rounded brightness-50" src="./assets/trabajo5.png">
+                <div class="">
+                    <h2 class="font-semibold text-lg mb-2">E-commerce</h2>
+                    <p class="font-semibold">This e-commerce project offers a complete experience for users and administrators. Users can browse products, save favorites, manage orders, and leave reviews. Administrators have tools to monitor orders, manage products, and view reviews.</p>
+                    <div class="flex gap-4 mt-3 justify-center">
+                        <a rel="noreferrer" target="_blank" href="https://ecommercemehrez.up.railway.app/"
+                        class="border-2 border border-transparent hover:border-purple-600 hover:text-purple-600 rounded-xl p-3 duration-300 btn-visit font-bold transition">Visit
+                        Web</a>
+                        <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/Ecommerce"
+                        class="border-2 border border-transparent hover:border-purple-600 hover:text-purple-600 rounded-xl p-3 duration-300 btn-code font-bold transition">Visit
+                        Code</a>
                     </div>
                 </div>
+                <div class="hidden sm:flex flex-wrap justify-center gap-3">
+                    <img src="./assets/python.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/djangoproject-svgrepo-com.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/nodejs.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/git.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/github.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/tailwind.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/htmx-b.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/javascript.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/postgresql-logo-svgrepo-com.svg" alt="logo-project" class="w-6">
+                </div>
+            </div>
+            <div class="p-7 rounded-xl card space-y-8 shadow-xl" data-aos="fade-up">
+                <img class="rounded brightness-50" src="./assets/trabajo3.png">
+                <div class="">
+                    <h2 class="font-semibold text-lg mb-2">ChatRealTime</h2>
+                    <p class="font-semibold">This chat app lets you join public groups, create private groups, or chat directly with friends. Customize your profile with name, photo, info, and location, and share photos to enrich your conversations.</p>
+                    <div class="flex gap-4 mt-3 justify-center">
+                        <a rel="noreferrer" target="_blank" href="https://chatrealtime.up.railway.app/"
+                        class="border-2 border border-transparent hover:border-purple-600 hover:text-purple-600 rounded-xl p-3 duration-300 btn-visit font-bold transition">Visit
+                        Web</a>
+                        <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/ChatRealtime"
+                        class="border-2 border border-transparent hover:border-purple-600 hover:text-purple-600 rounded-xl p-3 duration-300 btn-code font-bold transition">Visit
+                        Code</a>
+                    </div>
+                </div>
+                    <div class="hidden sm:flex flex-wrap justify-center gap-3">
+                    <img src="./assets/python.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/djangoproject-svgrepo-com.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/nodejs.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/git.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/github.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/tailwind.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/htmx-b.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/javascript.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/postgresql-logo-svgrepo-com.svg" alt="logo-project" class="w-6">
+                </div>
+            </div>
+            <div class="p-7 rounded-xl card space-y-8 shadow-xl" data-aos="fade-up">
+                <img class="rounded brightness-50" src="./assets/trabajo4.png">
+                <div class="">
+                    <h2 class="font-semibold text-lg mb-2">Social Network</h2>
+                    <p class="font-semibold">This app allows you to share your best photos and moments, create posts, like other posts, comment and react to other users' comments.</p>
+                    <div class="flex gap-4 mt-3 justify-center">
+                        <a rel="noreferrer" target="_blank" href="https://djangofakebook.up.railway.app/"
+                        class="border-2 border border-transparent hover:border-purple-600 hover:text-purple-600 rounded-xl p-3 duration-300 btn-visit font-bold transition">Visit
+                        Web</a>
+                        <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/djangoFakeBook"
+                        class="border-2 border border-transparent hover:border-purple-600 hover:text-purple-600 rounded-xl p-3 duration-300 btn-code font-bold transition">Visit
+                        Code</a>
+                    </div>
+                </div>
+                <div class="hidden sm:flex flex-wrap justify-center gap-3">
+                    <img src="./assets/python.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/djangoproject-svgrepo-com.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/nodejs.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/git.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/github.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/tailwind.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/htmx-b.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/javascript.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/postgresql-logo-svgrepo-com.svg" alt="logo-project" class="w-6">
+                </div>
+            </div>
+            <div class="p-7 rounded-xl card space-y-8 shadow-xl" data-aos="fade-up">
+                <img class="rounded brightness-50" src="./assets/trabajo2.png">
+                <div class="">
+                    <h2 class="font-semibold text-lg mb-2">SiteWeb</h2>
+                    <p class="font-semibold">This page is built using only HTML, CSS and a little bit of JavaScript. It offers a simple and functional experience, with a clean design and basic.</p>
+                    <div class="flex gap-4 mt-3 justify-center">
+                        <a rel="noreferrer" target="_blank" href="https://pagecss-benjaminmehrez.netlify.app/"
+                        class="border-2 border border-transparent hover:border-purple-600 hover:text-purple-600 rounded-xl p-3 duration-300 btn-visit font-bold transition">Visit
+                        Web</a>
+                        <a rel="noreferrer" target="_blank" href="https://github.com/BenjaminMehrez/paginacss"
+                        class="border-2 border border-transparent hover:border-purple-600 hover:text-purple-600 rounded-xl p-3 duration-300 btn-code font-bold transition">Visit
+                        Code</a>
+                    </div>
+                </div>
+                <div class="hidden sm:flex flex-wrap justify-center gap-3">
+                    <img src="./assets/html.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/css.svg" alt="logo-project" class="w-6">
+                    <img src="./assets/javascript.svg" alt="logo-project" class="w-6">
+                </div>
+            </div>
         </div>
     </section>
-    <section class="p-12 text-center md:text-start">
-        <div class="space-y-12 py-10 max-w-7xl m-auto">
-            <h3 class="font-bold text-3xl text-gray-800 underline">Skills</h3>
-            <p class="">I've been writing code since 2022, developing various personal projects while I'm self-taught in programming languages and frameworks.</p>
-            <div class="">
-                <h4 class="underline text-2xl mt-10 mb-7">Back-End</h4>
+    <section id="skills" class="max-w-screen-lg mx-auto mt-16 px-12 xl:px-0">
+        <div class="space-y-12 py-10">
+            <h3 class="font-bold text-3xl underline">Skills</h3>
+            <p class="font-semibold">I've been writing code since 2022, developing various personal projects while I'm self-taught in
+                programming languages and frameworks.</p>
+            <div class="text-center md:text-start">
+                <h4 class="underline text-2xl mt-10 mb-7 font-semibold">Back-End</h4>
                 <div class="md:flex items-center space-y-8 md:space-x-5 md:space-y-0">
-                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                    <div class="flex items-center justify-center card-prm p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md"
+                        data-aos="zoom-in">
                         <img class="w-10" src="/assets/nodejs.svg" alt="nodejs">
-                        <p class="font-bold">NodeJS</p>
+                        <p class="font-semibold">NodeJS</p>
                     </div>
-                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                    <div class="flex items-center justify-center card-prm p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md"
+                        data-aos="zoom-in">
                         <img class="w-10" src="/assets/express.svg" alt="expressjs">
-                        <p class="font-bold">ExpressJS</p>
+                        <p class="font-semibold">ExpressJS</p>
                     </div>
-                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                    <div class="flex items-center justify-center card-prm p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md"
+                        data-aos="zoom-in">
                         <img class="w-10" src="/assets/djangoproject-svgrepo-com.svg" alt="expressjs">
-                        <p class="font-bold">Django</p>
+                        <p class="font-semibold">Django</p>
                     </div>
                 </div>
             </div>
-            <div class="">
-                <h4 class="underline text-2xl mt-10 mb-7">Programming Languages</h4>
+            <div class="text-center md:text-start">
+                <h4 class="underline text-2xl mt-10 mb-7 font-semibold">Programming Languages</h4>
                 <div class="md:flex items-center space-y-8 md:space-x-5 md:space-y-0">
-                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                    <div class="flex items-center justify-center card-prm p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md"
+                        data-aos="zoom-in">
                         <img class="w-10" src="/assets/python.svg" alt="python">
-                        <p>Python</p>
+                        <p class="font-semibold">Python</p>
                     </div>
-                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                    <div class="flex items-center justify-center card-prm p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md"
+                        data-aos="zoom-in">
                         <img class="w-10" src="/assets/javascript.svg" alt="python">
-                        <p>JavaScript</p>
+                        <p class="font-semibold">JavaScript</p>
                     </div>
                 </div>
             </div>
-            <div class="">
-                <h4 class="underline text-2xl mt-10 mb-7">DataBases</h4>
+            <div class="text-center md:text-start">
+                <h4 class="underline text-2xl mt-10 mb-7 font-semibold">DataBases</h4>
                 <div class="md:flex items-center space-y-8 md:space-x-5 md:space-y-0">
-                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                    <div class="flex items-center justify-center card-prm p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md"
+                        data-aos="zoom-in">
                         <img class="w-10" src="/assets/postgresql-logo-svgrepo-com.svg" alt="mongodb">
-                        <p>Postgresql</p>
+                        <p class="font-semibold">Postgresql</p>
                     </div>
-                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
-                        <img class="w-10" src="/assets/mysql-svgrepo-com.svg" alt="mongodb">
-                        <p>MySQL</p>
-                    </div>
-                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                    <div class="flex items-center justify-center card-prm p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md"
+                        data-aos="zoom-in">
                         <img class="w-10" src="/assets/sqlite-svgrepo-com.svg" alt="mongodb">
-                        <p>SQLite</p>
+                        <p class="font-semibold">SQLite</p>
                     </div>
-                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                    <div class="flex items-center justify-center card-prm p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md"
+                        data-aos="zoom-in">
                         <img class="w-10" src="/assets/mongo.svg" alt="mongodb">
-                        <p>MongoDB</p>
+                        <p class="font-semibold">MongoDB</p>
                     </div>
                 </div>
             </div>
-            <div class="">
-                <h4 class="underline text-2xl mt-10 mb-7">Version Control</h4>
+            <div class="text-center md:text-start">
+                <h4 class="underline text-2xl mt-10 mb-7 font-semibold">Version Control</h4>
                 <div class="md:flex items-center space-y-8 md:space-x-5 md:space-y-0">
-                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                    <div class="flex items-center justify-center card-prm p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md"
+                        data-aos="zoom-in">
                         <img class="w-10" src="/assets/git.svg" alt="git">
-                        <p>Git</p>
+                        <p class="font-semibold">Git</p>
                     </div>
-                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                    <div class="flex items-center justify-center card-prm p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md"
+                        data-aos="zoom-in">
                         <img class="w-10" src="/assets/github.svg" alt="github">
-                        <p>GitHub</p>
+                        <p class="font-semibold">GitHub</p>
                     </div>
-                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                    <div class="flex items-center justify-center card-prm p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md"
+                        data-aos="zoom-in">
                         <img class="w-10" src="/assets/linux-svgrepo-com.svg" alt="github">
-                        <p>Linux</p>
+                        <p class="font-semibold">Linux</p>
                     </div>
                 </div>
             </div>
-            <div class="">
-                <h4 class="underline text-2xl mt-10 mb-7">Others</h4>
+            <div class="text-center md:text-start">
+                <h4 class="underline text-2xl mt-10 mb-7 font-semibold">Others</h4>
                 <div class="md:flex items-center space-y-8 md:space-x-5 md:space-y-0">
-                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-6 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                    <div class="flex items-center justify-center card-prm p-6 w-40 m-auto md:m-0 gap-3 rounded shadow-md"
+                        data-aos="zoom-in">
                         <img class="w-16" src="/assets/htmx.png" alt="mongodb">
-                        <p>HTMX</p>
+                        <p class="font-semibold">HTMX</p>
                     </div>
-                    <div class="flex items-center justify-center bg-gray-100 hover:bg-gray-300 p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md" data-aos="zoom-in">
+                    <div class="flex items-center justify-center card-prm p-4 w-40 m-auto md:m-0 gap-3 rounded shadow-md"
+                        data-aos="zoom-in">
                         <img class="w-10" src="/assets/tailwind.svg" alt="mongodb">
-                        <p>Tailwind</p>
+                        <p class="font-semibold">Tailwind</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-zinc-950 text-white p-12">
-        <div class="md:px-60">
+    <section class="max-w-screen-lg mx-auto mt-16 px-12 xl:px-0">
             <h3 class="underline text-3xl mt-10 mb-7">Experience</h3>
             <div class="">
-                <p id="texto" class="">Although to date I have not had the opportunity to gain formal work experience, I would like to highlight my deep motivation and desire to learn and develop professionally...</p>
-                <button class="py-2 font-bold underline" hx-get="/mas-texto" hx-target="#contenido-extra" hx-swap="beforeend" id="boton">See More</button>
+                <p id="texto" class="">Although to date I have not had the opportunity to gain formal work experience, I
+                    would like to highlight my deep motivation and desire to learn and develop professionally...</p>
+                <button class="py-2 font-bold underline hover:text-purple-600" hx-get="/mas-texto" hx-target="#contenido-extra"
+                    hx-swap="beforeend" id="boton">See More</button>
                 <div id="contenido-extra"></div>
                 <div style="display:none;" id="servidor">
-                    <p>I have always had a great passion for Web Developer. During my free time, I have dedicated many hours to self-study and participation in personal projects that have allowed me to acquire valuable knowledge and relevant skills. I have completed several online courses that have given me a solid foundation. I am a committed, responsible and very enthusiastic person. I firmly believe that attitude and willingness to learn are critical to success in any field. I am willing to take on any challenge and invest the time and effort necessary to acquire the skills required for the position. I am very interested in the possibility of joining your team and contributing my energy and dedication. I am confident that with the right guidance and my strong desire to learn, I can become a valuable member of your organization. I thank you in advance for the opportunity to be considered for this position. I remain at your disposal to provide any additional information or for an interview in which I can expand details about my motivations and aspirations.</p>
+                    <p>I have always had a great passion for Web Developer. During my free time, I have dedicated many
+                        hours to self-study and participation in personal projects that have allowed me to acquire
+                        valuable knowledge and relevant skills. I have completed several online courses that have given
+                        me a solid foundation. I am a committed, responsible and very enthusiastic person. I firmly
+                        believe that attitude and willingness to learn are critical to success in any field. I am
+                        willing to take on any challenge and invest the time and effort necessary to acquire the skills
+                        required for the position. I am very interested in the possibility of joining your team and
+                        contributing my energy and dedication. I am confident that with the right guidance and my strong
+                        desire to learn, I can become a valuable member of your organization. I thank you in advance for
+                        the opportunity to be considered for this position. I remain at your disposal to provide any
+                        additional information or for an interview in which I can expand details about my motivations
+                        and aspirations.</p>
                 </div>
             </div>
-        </div>
     </section>
-    <footer class="bg-black text-white flex justify-center items-center h-60">
+    <footer class="flex justify-center items-center h-40">
         <p class="font-bold text-1xl">&copy;Benjamin Mehrez</p>
     </footer>
 
 
-<script src="/main.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    // Simulamos la respuesta del servidor
-    document.querySelector('button').addEventListener('click', function(event) {
-        event.preventDefault(); // Evita el comportamiento predeterminado
+    <script src="/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Simulamos la respuesta del servidor
+        document.querySelector('button').addEventListener('click', function (event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado
 
-        // Simulamos la obtención del contenido desde el "servidor"
-        const contenido = document.querySelector('#servidor').innerHTML;
+            // Simulamos la obtención del contenido desde el "servidor"
+            const contenido = document.querySelector('#servidor').innerHTML;
 
-        // Agregamos el contenido dinámicamente al div destino
-        document.querySelector('#contenido-extra').innerHTML += contenido;
-        
-        this.style.display = 'none';
-    });
-</script>
-<script>
-    AOS.init();
-  </script>
+            // Agregamos el contenido dinámicamente al div destino
+            document.querySelector('#contenido-extra').innerHTML += contenido;
+
+            this.style.display = 'none';
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
