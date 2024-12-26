@@ -24,18 +24,16 @@ body{
 }
 
 .card{
-    background: #11091a;
     max-width: 480px;
 }
 
 .card-prm{
-    background-color: #11091a;
     transition: all 2s ease-in-out;
 }
 
 .card-prm:hover{
     transition: all 2s ease-in-out;
-    background-color: #0a050f;
+    background-color: #351450;
 }
 
 
