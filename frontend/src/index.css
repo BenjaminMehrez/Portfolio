@@ -23,11 +23,15 @@ body {
   max-width: 480px;
 }
 
-.card-prm {
-  transition: all 2s ease-in-out;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.card-prm:hover {
-  transition: all 2s ease-in-out;
-  background-color: #351450;
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
 }

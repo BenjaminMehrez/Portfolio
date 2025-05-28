@@ -18,7 +18,7 @@ function ProjectDetail() {
     <Layout>
       <TracingBeam className="mt-15 px-10 md:px-5">
         <div className="max-w-2xl mx-auto antialiased pt-4 relative">
-          <div className="mb-10">
+          <div className="mb-10 fade-in">
             <div className="flex justify-between items-center">
               <p className={twMerge("text-xl mb-4")}>{item?.title}</p>
               <div className="mb-3 space-x-5">
