@@ -2,7 +2,7 @@ function EducationTimeLine() {
   return (
     <section
       id="educationtimeline"
-      className="max-w-screen-lg mx-auto mt-16 px-12 xl:px-0"
+      className="max-w-screen-lg mx-auto my-20 px-12 xl:px-0"
     >
       <h3 className="font-bold text-3xl underline">Education Timeline</h3>
       <ul className="flex flex-col lg:flex-row mt-10 list-disc list-inside lg:list-none lg:text-center lg:text-sm">

@@ -2,7 +2,7 @@ function Certificate() {
   return (
     <section
       id="certificate"
-      className="max-w-screen-lg mx-auto mt-16 px-12 xl:px-0"
+      className="max-w-screen-lg mx-auto mt-30 px-12 xl:px-0"
     >
       <h3 className="font-bold text-3xl underline">Certificates</h3>
       <div className="flex flex-wrap justify-center items-center gap-20 mt-24">
