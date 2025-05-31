@@ -2,18 +2,19 @@
 import Layout from "../components/Layout";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "../components/ui/tracing-beam";
-import { projects } from "../data/projectsIngles";
+import { projects, projectsSpanish } from "../data/projects";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
+import useLanguageStore from "@/store/useLanguage";
 
 function ProjectDetail() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+  const { language } = useLanguageStore();
   const { id } = useParams();
-  const item = projects.find((item: any) => item.id == id);
-
+  const projectList = language === "es" ? projectsSpanish : projects;
+  const item = projectList.find((item: any) => item.id == id);
   return (
     <Layout>
       <TracingBeam className="mt-15 px-10 md:px-5">
@@ -21,14 +22,20 @@ function ProjectDetail() {
           <div className="mb-10 fade-in">
             <div className="flex justify-between items-center">
               <p className={twMerge("text-xl mb-4")}>{item?.title}</p>
-              <div className="mb-3 space-x-5">
+              <div className="mb-3 flex space-x-5">
                 {item?.code && (
                   <a
                     target="_blank"
                     className="hover:text-purple-600 transition-all duration-300"
                     href={item?.code}
                   >
-                    <span className="hidden sm:inline">Visit</span> Code
+                    {language === "es" ? (
+                      <>Codigo</>
+                    ) : (
+                      <>
+                        <span className="hidden sm:inline">Visit</span> Code
+                      </>
+                    )}
                   </a>
                 )}
                 <a
@@ -36,7 +43,13 @@ function ProjectDetail() {
                   className="hover:text-purple-600 transition-all duration-300"
                   href={item?.page}
                 >
-                  <span className="hidden sm:inline">Visit</span> Page
+                  {language === "es" ? (
+                    <>Pagina</>
+                  ) : (
+                    <>
+                      <span className="hidden sm:inline">Visit</span> Page
+                    </>
+                  )}
                 </a>
               </div>
             </div>

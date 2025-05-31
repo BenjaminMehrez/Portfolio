@@ -3,7 +3,7 @@ import Language from "./Language";
 import useTranslation from "@/hooks/useTranslation";
 
 function NavBar() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <header className="px-12 lg:px-0 backdrop-blur-lg bg-dark-200/30 dark:bg-dark-900/30 fixed w-full z-20 top-0 left-0">
@@ -18,34 +18,36 @@ function NavBar() {
             B<span className="text-color">M</span>
           </a>
         </h1>
-        <div className="flex gap-10 font-semibold items-center">
+        <div className="flex gap-7 font-semibold items-center">
           <Language />
-          <a
-            href="/#projects"
-            className="border-b-2 border-transparent hover:border-purple-600 transition duration-300"
-          >
-            {t.navbar.projects}
-          </a>
-          <a
-            href="/#skills"
-            className="border-b-2 border-transparent hover:border-purple-600 transition duration-300"
-          >
-            Skills
-          </a>
-          <Link
-            to="https://www.linkedin.com/in/benjamin-mehrez-ab907b30b/"
-            className="hidden md:block w-5 border-b-2 border-transparent pb-2 hover:border-purple-600 transition duration-300"
-            target="_blank"
-          >
-            <img src="/linkedin.svg" alt="linkedin" />
-          </Link>
-          <Link
-            to="https://github.com/BenjaminMehrez"
-            className="hidden md:block w-5 border-b-2 border-transparent pb-2 hover:border-purple-600 transition duration-300"
-            target="_blank"
-          >
-            <img src="/github.svg" alt="github" />
-          </Link>
+          <div className="flex gap-9 font-semibold items-center">
+            <a
+              href="/#projects"
+              className="border-b-2 border-transparent hover:border-purple-600 transition duration-300"
+            >
+              {t.navbar.projects}
+            </a>
+            <a
+              href="/#skills"
+              className="border-b-2 border-transparent hover:border-purple-600 transition duration-300"
+            >
+              Skills
+            </a>
+            <Link
+              to="https://www.linkedin.com/in/benjamin-mehrez-ab907b30b/"
+              className="hidden md:block w-5 border-b-2 border-transparent pb-2 hover:border-purple-600 transition duration-300"
+              target="_blank"
+            >
+              <img src="/linkedin.svg" alt="linkedin" />
+            </Link>
+            <Link
+              to="https://github.com/BenjaminMehrez"
+              className="hidden md:block w-5 border-b-2 border-transparent pb-2 hover:border-purple-600 transition duration-300"
+              target="_blank"
+            >
+              <img src="/github.svg" alt="github" />
+            </Link>
+          </div>
         </div>
       </nav>
     </header>

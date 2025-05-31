@@ -1,3 +1,4 @@
+import useTranslation from "@/hooks/useTranslation";
 import { cn } from "../../lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 
@@ -19,7 +20,7 @@ export const HoverEffect = ({
   className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
+  const { t } = useTranslation();
   return (
     <div
       data-aos="fade-up"
@@ -58,7 +59,7 @@ export const HoverEffect = ({
             <div className="p-4">
               <CardTitle>{item.title}</CardTitle>
               <CardDescription>{item.description}</CardDescription>
-              <CardButton>See more</CardButton>
+              <CardButton>{t.project.button}</CardButton>
             </div>
           </Card>
         </Link>
@@ -102,7 +103,10 @@ export const CardImage = ({
     <img
       src={cn(children, src)}
       alt={cn(children, alt)}
-      className={cn("p-3 brightness-50 transition-all group-hover:brightness-100 rounded-2xl duration-700", className)}
+      className={cn(
+        "p-3 brightness-50 transition-all group-hover:brightness-100 rounded-2xl duration-700",
+        className
+      )}
     />
   );
 };
@@ -146,7 +150,8 @@ export const CardButton = ({
 }) => {
   return (
     <p
-      className={cn("absolute h-full right-1/2 translate-x-1/2 top-67 tracking-wide transition-all duration-700",
+      className={cn(
+        "absolute h-full right-1/2 translate-x-1/2 top-67 tracking-wide transition-all duration-700",
         className
       )}
     >

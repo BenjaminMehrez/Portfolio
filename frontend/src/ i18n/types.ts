@@ -12,6 +12,7 @@ export type Translations = {
   project: {
     title: string;
     description: string
+    button: string
   }
   skills: {
     description: string
