@@ -12,7 +12,7 @@ export default function Language() {
   const { language, setLanguage } = useLanguageStore();
 
   return (
-<div className="relative inline-flex rounded-md">
+    <div className="hidden relative sm:inline-flex rounded-md">
       <RadioGroup
         value={language}
         onValueChange={setLanguage}
@@ -22,7 +22,8 @@ export default function Language() {
         <div
           className="absolute bottom-0 left-0 h-[2.5px] w-1/2 bg-purple-600 transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]"
           style={{
-            transform: language === "en" ? "translateX(100%)" : "translateX(0%)",
+            transform:
+              language === "en" ? "translateX(100%)" : "translateX(0%)",
           }}
         />
 
