@@ -1,16 +1,19 @@
+import useTranslation from "@/hooks/useTranslation";
+
 function AboutMe() {
+  
+  const { t } = useTranslation();
+
   return (
     <section id="home" className="max-w-screen-lg flex mx-auto md:min-h-dvh">
       <div className="flex flex-col gap-20 items-center justify-center m-auto xl:gap-80 md:flex-row px-12 py-20 xl:p-0">
         <div data-aos="fade-right">
           <h5 className="py-4 font-semibold">
-            Hi, my name is{" "}
+            {t.home.title}{" "}
             <span className="text-color text-lg">Benjamin Mehrez</span>
           </h5>
           <p className="font-semibold leading-loose">
-            I’m a Full-Stack Developer with 3+ years of experience building web
-            applications. I work on both front-end and back-end to create solid,
-            efficient, and user-friendly solutions.
+            {t.home.description}
           </p>
           <div className="flex mt-6 space-x-3 items-center">
             <a
@@ -85,7 +88,7 @@ function AboutMe() {
           className="hidden md:flex gap-4 ml-4 absolute bottom-10 righ-2/3 text-2xl animate-bounce hover:text-purple-600 duration-300"
           href="#projects"
         >
-          Projects <img src="/arrowdown.svg" className="w-6" />
+          {t.home.button} <img src="/arrowdown.svg" className="w-6" />
         </a>
       </div>
     </section>

@@ -1,10 +1,13 @@
+import useTranslation from "@/hooks/useTranslation";
+
 function Certificate() {
+  const {t} = useTranslation()
   return (
     <section
       id="certificate"
       className="max-w-screen-lg mx-auto mt-30 px-12 xl:px-0"
     >
-      <h3 className="font-bold text-3xl underline">Certificates</h3>
+      <h3 className="font-bold text-3xl underline">{t.education.certificates}</h3>
       <div className="flex flex-wrap justify-center items-center gap-20 mt-24">
         <div
           className="w-72 sm:h-44 bg-black text-center shadow-sm shadow-purple-900 hover:shadow-purple-900 hover:shadow-lg transition-all duration-300"
@@ -17,7 +20,7 @@ function Certificate() {
           />
           <div className="sm:relative bottom-10 px-6">
             <h4 className="hidden sm:block font-semibold text-sm">
-              Web Development
+              {t.education.desarrolloWeb}
             </h4>
             <p className="hidden sm:block font-semibold text-gray-400 text-sm">
               CoderHouse
@@ -89,7 +92,7 @@ function Certificate() {
           />
           <div className="sm:relative bottom-12 px-6">
             <h4 className="hidden sm:block font-semibold text-sm">
-              Python Interactive
+              {t.education.python}
             </h4>
             <p className="hidden sm:block font-semibold text-gray-400 text-sm">
               DesafioLatam

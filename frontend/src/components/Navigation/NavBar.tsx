@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import Language from "./Language";
+import useTranslation from "@/hooks/useTranslation";
 
 function NavBar() {
+  const { t } = useTranslation()
+
   return (
     <header className="px-12 lg:px-0 backdrop-blur-lg bg-dark-200/30 dark:bg-dark-900/30 fixed w-full z-20 top-0 left-0">
       <nav className="h-16 max-w-6xl mx-auto flex items-center justify-between">
@@ -21,7 +24,7 @@ function NavBar() {
             href="/#projects"
             className="border-b-2 border-transparent hover:border-purple-600 transition duration-300"
           >
-            Projects
+            {t.navbar.projects}
           </a>
           <a
             href="/#skills"

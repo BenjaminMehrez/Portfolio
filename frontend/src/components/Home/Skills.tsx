@@ -1,16 +1,17 @@
+import useTranslation from "@/hooks/useTranslation";
+
 function Skills() {
+  const { t } = useTranslation();
   return (
     <section
       id="skills"
       className="max-w-screen-lg mx-auto mt-16 px-12 xl:px-0"
     >
       <div className="space-y-12 py-10">
-        <h3 className="font-bold text-3xl underline">Skills</h3>
-        <p className="font-semibold">
-          I've been writing code since 2022, developing various personal
-          projects while I'm self-taught in programming languages and
-          frameworks.
-        </p>
+        <div className="space-y-4">
+          <h3 className="font-bold text-3xl underline">Skills</h3>
+          <p className="font-semibold">{t.skills.description}</p>
+        </div>
         <div className="text-center md:text-start">
           <h4 className="underline text-2xl mt-10 mb-7 font-semibold">
             Front-End
@@ -69,7 +70,7 @@ function Skills() {
         </div>
         <div className="text-center md:text-start">
           <h4 className="underline text-2xl mt-10 mb-7 font-semibold">
-            Programming Languages
+            {t.skills.languages}
           </h4>
           <div className="flex sm:flex-row flex-col items-center gap-8 sm:gap-5">
             <div
@@ -90,7 +91,7 @@ function Skills() {
         </div>
         <div className="text-center md:text-start">
           <h4 className="underline text-2xl mt-10 mb-7 font-semibold">
-            DataBases
+            {t.skills.database}
           </h4>
           <div className="flex sm:flex-row flex-col items-center gap-8 sm:gap-5">
             <div
@@ -122,7 +123,7 @@ function Skills() {
         </div>
         <div className="text-center md:text-start">
           <h4 className="underline text-2xl mt-10 mb-7 font-semibold">
-            Version Control
+            {t.skills.versionControl}
           </h4>
           <div className="flex sm:flex-row flex-col items-center gap-8 sm:gap-5">
             <div
@@ -150,7 +151,7 @@ function Skills() {
         </div>
         <div className="text-center md:text-start">
           <h4 className="underline text-2xl mt-10 mb-7 font-semibold">
-            Others
+            {t.skills.others}
           </h4>
           <div className="flex sm:flex-row flex-col items-center gap-8 sm:gap-5">
             <div
