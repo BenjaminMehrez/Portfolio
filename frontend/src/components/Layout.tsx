@@ -1,4 +1,4 @@
-import BannerLanguage from "./Home/BannerLanguage";
+import BannerLanguage from "./Navigation/BannerLanguage";
 import Footer from "./Navigation/Footer";
 import NavBar from "./Navigation/NavBar";
 
