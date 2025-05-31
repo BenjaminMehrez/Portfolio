@@ -101,7 +101,7 @@ export const projects = [
   {
     id: 5,
     title: "Florería Madison",
-    description: "Floreria Madison is a beautifully designed landing page created for a boutique floral shop. The page offers a warm, elegant introduction to the brand and is designed with conversion in mind—guiding users to explore products, read customer reviews, and place orders easily. With key sections like product highlights, testimonials, and contact information (including email and location), the landing page provides a complete overview of the shop's offerings while staying visually appealing and easy to navigate.",
+    description: "Floreria Madison is a beautifully designed landing page created for a boutique floral shop. The page offers a warm, elegant introduction to the brand and is designed with conversion in mind—guiding users to explore products, read customer reviews, and how to easily place orders. With key sections like product highlights, testimonials, and contact information (including email and location), the landing page provides a complete overview of the shop's offerings while staying visually appealing and easy to navigate.",
     keyFeatures: [
       "Hero section with headline, call-to-action, and visual impact.",
       "Featured Catalog showing popular or seasonal flower arrangements.",
@@ -227,7 +227,7 @@ export const projectsSpanish = [
   {
     id: 5,
     title: "Florería Madison",
-    description: "Florería Madison es una elegante landing page diseñada para una boutique de flores. Presenta la marca de forma cálida y atractiva, pensada para la conversión del visitante. Invita a explorar productos, leer reseñas y realizar pedidos con facilidad. Con secciones clave como catálogo destacado, testimonios y datos de contacto (email y ubicación), la página brinda una visión completa de la oferta del negocio con una estética cuidada y navegación clara.",
+    description: "Florería Madison es una elegante landing page diseñada para una floreria. Presenta la marca de forma cálida y atractiva, pensada para la conversión del visitante. Invita a explorar productos, leer reseñas y como realizar pedidos con facilidad. Con secciones clave como catálogo destacado, testimonios y datos de contacto (email y ubicación), la página brinda una visión completa de la oferta del negocio con una estética cuidada y navegación clara.",
     keyFeatures: [
       "Sección principal con titular, llamada a la acción e impacto visual.",
       "Catálogo destacado con arreglos populares o de temporada.",

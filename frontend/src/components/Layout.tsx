@@ -1,3 +1,4 @@
+import BannerLanguage from "./Home/BannerLanguage";
 import Footer from "./Navigation/Footer";
 import NavBar from "./Navigation/NavBar";
 
@@ -10,6 +11,7 @@ const Layout = ({ children }: Props) => {
     <div className="layout">
       <NavBar />
       <main>{children}</main>
+      <BannerLanguage />
       <Footer />
     </div>
   );
