@@ -13,6 +13,7 @@ export const projects = [
       "Integration with external or mock APIs for product/order data.",
       "Modular and reusable component architecture."
     ],
+    status: "Completed",
     image: "/trabajo2.png",
     skillsFront: ["/react.svg", "/vite.svg", "/nodejs.svg", "/javascript.svg"],
     skillsBack: [
@@ -37,6 +38,7 @@ export const projects = [
       "User authentication with sign-up and login.",
       "Clean, responsive design for desktop and mobile.",
     ],
+    status: "Completed",
     image: "/trabajo4.png",
     skillsFront: [],
     skillsBack: [
@@ -62,6 +64,7 @@ export const projects = [
       "Online Status Indicators to show who is active in real time.",
       "Responsive Design: Optimized for mobile, tablet, and desktop views."
     ],
+    status: "Completed",
     image: "/trabajo3.png",
     skillsFront: [],
     skillsBack: [
@@ -85,6 +88,7 @@ export const projects = [
       "Review and rating system for products.",
       "Secure authentication and personal account management.",
     ],
+    status: "Completed",
     image: "/trabajo5.png",
     skillsFront: [],
     skillsBack: ["/python.svg", "/django.svg", "/nodejs.svg", "/javascript.svg"],
@@ -112,6 +116,7 @@ export const projects = [
       "Responsive Design, optimized for both mobile and desktop.",
       "Fast and smooth UX with clear navigation and visual hierarchy."
     ],
+    status: "Pending",
     image: "/trabajo7.png",
     skillsFront: [
       "/vite.svg",
@@ -136,6 +141,7 @@ export const projects = [
       "Product reviews system for feedback.",
       "Integrated payments for a smooth checkout."
     ],
+    status: "Completed",
     image: "/trabajo6.png",
     skillsFront: ["/vite.svg", "/nodejs.svg", "/typescript.svg", "/zustand.svg", "/reactquery.svg"],
     skillsBack: ["/python.svg", "/django.svg"],
@@ -160,6 +166,7 @@ export const projectsSpanish = [
       "Integración con APIs externas o simuladas para datos de productos/pedidos.",
       "Arquitectura de componentes modular y reutilizable."
     ],
+    status: "Completed",
     image: "/trabajo2.png",
     skillsFront: ["/react.svg", "/vite.svg", "/nodejs.svg", "/javascript.svg"],
     skillsBack: ["/javascript.svg", "/express.svg", "/nodejs.svg"],
@@ -179,6 +186,7 @@ export const projectsSpanish = [
       "Autenticación de usuarios con registro e inicio de sesión.",
       "Diseño limpio y responsive para escritorio y móvil.",
     ],
+    status: "Completed",
     image: "/trabajo4.png",
     skillsFront: [],
     skillsBack: ["/python.svg", "/django.svg", "/nodejs.svg", "/javascript.svg"],
@@ -199,6 +207,7 @@ export const projectsSpanish = [
       "Indicadores de estado en línea para saber quién está activo.",
       "Diseño responsive para móvil, tablet y escritorio."
     ],
+    status: "Completed",
     image: "/trabajo3.png",
     skillsFront: [],
     skillsBack: ["/python.svg", "/django.svg", "/nodejs.svg", "/javascript.svg"],
@@ -217,6 +226,7 @@ export const projectsSpanish = [
       "Sistema de reseñas y valoraciones.",
       "Autenticación segura y gestión de cuenta personal.",
     ],
+    status: "Completed",
     image: "/trabajo5.png",
     skillsFront: [],
     skillsBack: ["/python.svg", "/django.svg", "/nodejs.svg", "/javascript.svg"],
@@ -238,6 +248,7 @@ export const projectsSpanish = [
       "Diseño responsive, optimizado para móvil y escritorio.",
       "Experiencia rápida y fluida con jerarquía visual clara."
     ],
+    status: "Pendiente",
     image: "/trabajo7.png",
     skillsFront: ["/vite.svg", "/nodejs.svg", "/typescript.svg"],
     skillsBack: [],
@@ -258,6 +269,7 @@ export const projectsSpanish = [
       "Sistema de reseñas de productos.",
       "Pagos integrados para un checkout fluido."
     ],
+    status: "Completed",
     image: "/trabajo6.png",
     skillsFront: ["/vite.svg", "/nodejs.svg", "/typescript.svg", "/zustand.svg", "/reactquery.svg"],
     skillsBack: ["/python.svg", "/django.svg"],

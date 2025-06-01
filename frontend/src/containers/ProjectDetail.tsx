@@ -23,45 +23,67 @@ function ProjectDetail() {
             <div className="flex justify-between items-center">
               <p className={twMerge("text-xl mb-4")}>{item?.title}</p>
               <div className="mb-3 flex space-x-5">
-                {item?.code && (
-                  <a
-                    target="_blank"
-                    className="hover:text-purple-600 transition-all duration-300"
-                    href={item?.code}
-                  >
-                    {language === "es" ? (
-                      <>Codigo</>
-                    ) : (
-                      <>
-                        <span className="hidden sm:inline">Visit</span> Code
-                      </>
+                {item?.status == "Pending" || item?.status == "Pendiente" ? (
+                  <span className="text-lg underline text-purple-600">{item?.status}</span>
+                ) : (
+                  <>
+                    {item?.code && (
+                      <a
+                        target="_blank"
+                        className="hover:text-purple-600 transition-all duration-300"
+                        href={item?.code}
+                      >
+                        {language === "es" ? (
+                          <>Codigo</>
+                        ) : (
+                          <>
+                            <span className="hidden sm:inline">Visit</span> Code
+                          </>
+                        )}
+                      </a>
                     )}
-                  </a>
+                    <a
+                      target="_blank"
+                      className="hover:text-purple-600 transition-all duration-300"
+                      href={item?.page}
+                    >
+                      {language === "es" ? (
+                        <>Pagina</>
+                      ) : (
+                        <>
+                          <span className="hidden sm:inline">Visit</span> Page
+                        </>
+                      )}
+                    </a>
+                  </>
                 )}
-                <a
-                  target="_blank"
-                  className="hover:text-purple-600 transition-all duration-300"
-                  href={item?.page}
-                >
-                  {language === "es" ? (
-                    <>Pagina</>
-                  ) : (
-                    <>
-                      <span className="hidden sm:inline">Visit</span> Page
-                    </>
-                  )}
-                </a>
               </div>
             </div>
             <div className="text-md prose prose-sm dark:prose-invert">
-              {item?.image && (
-                <img
-                  src={item.image}
-                  alt="blog thumbnail"
-                  height="1000"
-                  width="1000"
-                  className="rounded-lg mb-10 object-cover"
-                />
+              {item?.status == "Pending" || item?.status == "Pendiente" ? (
+                <>
+                  {item?.image && (
+                    <img
+                      src={item.image}
+                      alt="blog thumbnail"
+                      height="1000"
+                      width="1000"
+                      className="rounded-lg mb-10 object-cover brightness-50"
+                    />
+                  )}
+                </>
+              ) : (
+                <>
+                  {item?.image && (
+                    <img
+                      src={item.image}
+                      alt="blog thumbnail"
+                      height="1000"
+                      width="1000"
+                      className="rounded-lg mb-10 object-cover"
+                    />
+                  )}
+                </>
               )}
               {item?.description}
             </div>
