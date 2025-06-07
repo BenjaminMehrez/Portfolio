@@ -6,6 +6,7 @@ import { projects, projectsSpanish } from "../data/projects";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import useLanguageStore from "@/store/useLanguage";
+import useTranslation from "@/hooks/useTranslation";
 
 function ProjectDetail() {
   useEffect(() => {
@@ -13,6 +14,7 @@ function ProjectDetail() {
   }, []);
   const { language } = useLanguageStore();
   const { id } = useParams();
+  const { t } = useTranslation()
   const projectList = language === "es" ? projectsSpanish : projects;
   const item = projectList.find((item: any) => item.id == id);
   return (
@@ -89,7 +91,7 @@ function ProjectDetail() {
             </div>
             <div className="my-10">
               <h2 className="text-2xl font-bold text-white mb-4">
-                Key Features
+                {t.project.key}
               </h2>
               <ul className="space-y-3 list-disc list-inside text-gray-300 text-sm">
                 {item?.keyFeatures?.map((feature: string, index: number) => (
@@ -128,7 +130,7 @@ function ProjectDetail() {
               )}
               {item?.skillsOthers && item?.skillsOthers?.length > 0 && (
                 <div className="mt-10 flex flex-wrap gap-3 items-center">
-                  <h4 className="text-xl font-semibold">Others:</h4>
+                  <h4 className="text-xl font-semibold">{t.skills.others}:</h4>
                   {item?.skillsOthers.map((skill: any) => (
                     <img
                       key={skill}

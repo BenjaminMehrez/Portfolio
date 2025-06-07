@@ -13,6 +13,7 @@ export type Translations = {
     title: string;
     description: string
     button: string
+    key: string
   }
   skills: {
     description: string
