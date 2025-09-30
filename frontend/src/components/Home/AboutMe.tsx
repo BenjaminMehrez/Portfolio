@@ -5,9 +5,9 @@ function AboutMe() {
   const { t } = useTranslation();
 
   return (
-    <section id="home" className="max-w-screen-lg flex mx-auto md:min-h-dvh">
-      <div className="flex flex-col gap-20 items-center justify-center m-auto xl:gap-80 md:flex-row px-12 py-20 xl:p-0">
-        <div data-aos="fade-right">
+    <section id="home" className="max-w-6xl flex mx-auto md:min-h-dvh px-6 xl:px-0">
+      <div className="mt-20 md:mt-0 flex flex-col md:flex-row justify-between items-center mx-auto gap-10">
+        <div data-aos="fade-right" className="md:w-[39%]">
           <h5 className="py-4 font-semibold">
             {t.home.title}{" "}
             <span className="text-color text-lg">Benjamin Mehrez</span>
@@ -80,12 +80,12 @@ function AboutMe() {
         </div>
         <div
           data-aos="fade-left"
-          className="border-2 border-purple-600 max-w-sm"
+          className="border-2 border-purple-600 md:max-w-sm"
         >
-          <img className="" src="/myphoto.JPG" alt="benjaminmehrez" />
+          <img className="object-cover" src="/myPhoto.webp" alt="benjaminmehrez" />
         </div>
         <a
-          className="hidden md:flex gap-4 ml-4 absolute bottom-10 righ-2/3 text-2xl animate-bounce hover:text-purple-600 duration-300"
+          className="hidden md:flex gap-4 ml-4 absolute bottom-10 left-[45%] text-2xl animate-bounce hover:text-purple-600 duration-300"
           href="#projects"
         >
           {t.home.button} <img src="/arrowdown.svg" className="w-6" />

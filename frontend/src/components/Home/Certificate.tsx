@@ -5,7 +5,7 @@ function Certificate() {
   return (
     <section
       id="certificate"
-      className="max-w-screen-lg mx-auto mt-30 px-12 xl:px-0"
+      className="max-w-6xl mx-auto mt-30 px-6 xl:px-0"
     >
       <h3 className="font-bold text-3xl underline">{t.education.certificates}</h3>
       <div className="flex flex-wrap justify-center items-center gap-20 mt-24">
@@ -15,7 +15,7 @@ function Certificate() {
         >
           <img
             className="sm:relative sm:w-60 h-auto left-6 bottom-14 object-cover rounded-md shadow-md brightness-105 contrast-110"
-            src="/webdeveloper.png"
+            src="/webdeveloper.webp"
             alt="certificate"
           />
           <div className="sm:relative bottom-10 px-6">
@@ -33,7 +33,7 @@ function Certificate() {
         >
           <img
             className="sm:relative sm:w-60 h-auto left-6 bottom-14 object-cover rounded-md shadow-md brightness-105 contrast-110"
-            src="/javascript.png"
+            src="/javascript.webp"
             alt="certificate"
           />
           <div className="sm:relative bottom-10 px-6">
@@ -51,7 +51,7 @@ function Certificate() {
         >
           <img
             className="sm:relative sm:w-60 h-auto left-6 bottom-14 object-cover rounded-md shadow-md brightness-105 contrast-110"
-            src="/backend.png"
+            src="/backend.webp"
             alt="certificate"
           />
           <div className="sm:relative bottom-10 px-6">
@@ -69,7 +69,7 @@ function Certificate() {
         >
           <img
             className="sm:relative sm:w-60 h-auto left-6 bottom-14 object-cover rounded-md shadow-md brightness-105 contrast-110"
-            src="/freecodeweb.png"
+            src="/freecodeweb.webp"
             alt="certificate"
           />
           <div className="sm:relative bottom-10 px-6">
@@ -87,7 +87,7 @@ function Certificate() {
         >
           <img
             className="sm:relative sm:w-60 h-auto left-6 bottom-14 object-cover rounded-md shadow-md brightness-105 contrast-110"
-            src="/python.png"
+            src="/python.webp"
             alt="certificate"
           />
           <div className="sm:relative bottom-12 px-6">

@@ -5,7 +5,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="max-w-screen-lg mx-auto mt-16 px-12 xl:px-0"
+      className="max-w-6xl mx-auto mt-16 px-6 xl:px-0"
     >
       <div className="space-y-12 py-10">
         <div className="space-y-4">
@@ -165,8 +165,8 @@ function Skills() {
               className="flex items-center justify-center w-full sm:w-auto p-6 m-auto md:m-0 gap-3 rounded shadow-sm shadow-purple-900"
               data-aos="zoom-in"
             >
-              <img className="w-16" src="/htmx.png" alt="mongodb" />
-              <p className="font-semibold">HTMX</p>
+              <img className="w-7" src="/docker.svg" alt="mongodb" />
+              <p className="font-semibold">Docker</p>
             </div>
             <div
               className="flex items-center justify-center w-full sm:w-auto p-4 m-auto md:m-0 gap-3 rounded shadow-sm shadow-purple-900"

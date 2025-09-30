@@ -10,7 +10,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="max-w-screen-lg mx-auto mt-16 px-12 xl:px-0"
+      className="max-w-6xl mx-auto mt-16 px-6 xl:px-0"
     >
       <h1 className="font-bold text-3xl underline">{t.project.title}</h1>
       <p className="font-semibold mt-4">{t.project.description}</p>

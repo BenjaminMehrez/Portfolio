@@ -14,7 +14,7 @@ function ProjectDetail() {
   }, []);
   const { language } = useLanguageStore();
   const { id } = useParams();
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const projectList = language === "es" ? projectsSpanish : projects;
   const item = projectList.find((item: any) => item.id == id);
   return (
@@ -26,13 +26,24 @@ function ProjectDetail() {
               <p className={twMerge("text-xl mb-4")}>{item?.title}</p>
               <div className="mb-3 flex space-x-5">
                 {item?.status == "Pending" || item?.status == "Pendiente" ? (
-                  <span className="text-lg underline text-purple-600">{item?.status}</span>
+                  <span className="text-lg underline text-purple-600">
+                    {item?.status}
+                  </span>
+                ) : item?.status === "Private" ? (
+                  <span className="hover:text-purple-600 transition-all duration-300 font-semibold">
+                    {language === "es" ? (
+                      <>Privado</>
+                    ) : (
+                        <span className="hidden sm:inline">Private</span>
+                    )}
+                  </span>
+
                 ) : (
                   <>
                     {item?.code && (
                       <a
                         target="_blank"
-                        className="hover:text-purple-600 transition-all duration-300"
+                        className="hover:text-purple-600 transition-all duration-300 font-semibold"
                         href={item?.code}
                       >
                         {language === "es" ? (
@@ -46,7 +57,7 @@ function ProjectDetail() {
                     )}
                     <a
                       target="_blank"
-                      className="hover:text-purple-600 transition-all duration-300"
+                      className="hover:text-purple-600 transition-all duration-300 font-semibold"
                       href={item?.page}
                     >
                       {language === "es" ? (

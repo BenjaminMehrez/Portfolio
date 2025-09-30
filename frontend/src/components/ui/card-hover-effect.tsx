@@ -33,7 +33,7 @@ export const HoverEffect = ({
         <Link
           to={`/projects/${item?.id}`}
           key={item?.id}
-          className="relative group block p-2 h-85 w-85"
+          className="relative group block p-2 h-95 w-95"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -151,7 +151,7 @@ export const CardButton = ({
   return (
     <p
       className={cn(
-        "absolute h-full right-1/2 translate-x-1/2 top-67 tracking-wide transition-all duration-700",
+        "absolute h-full right-1/2 translate-x-1/2 top-77 tracking-wide transition-all duration-700",
         className
       )}
     >
