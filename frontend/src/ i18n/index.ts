@@ -7,7 +7,7 @@ const translations: Record<'es' | 'en', Translations> = {
     },
     home: {
       title: "Hola, soy",
-      description: "Soy desarrollador full-stack con más de 3 años desarrollando aplicaciones web. Trabajo tanto en front-end como en back-end para crear soluciones sólidas, eficientes y fáciles de usar.",
+      description: "Soy desarrollador full-stack con más de 4 años desarrollando aplicaciones web. Trabajo tanto en front-end como en back-end para crear soluciones sólidas, eficientes y fáciles de usar.",
       button: "Proyectos"
     },
     project: {
@@ -17,7 +17,7 @@ const translations: Record<'es' | 'en', Translations> = {
       key: "Características principales",
     },
     skills: {
-      description: "Desarrollador autodidacta desde 2022, con experiencia en la creación y mantenimiento de proyectos profesionales utilizando lenguajes y frameworks modernos.",
+      description: "Desarrollador desde 2021, con experiencia en la creación y mantenimiento de proyectos profesionales utilizando lenguajes y frameworks modernos.",
       languages: "Lenguajes de Programación",
       database: "Bases de Datos",
       versionControl: "Control de Versiones",
@@ -36,7 +36,7 @@ const translations: Record<'es' | 'en', Translations> = {
     },
     home: {
       title: "Hi, my name is",
-      description: "I’m a Full-Stack Developer with 3+ years of experience building web applications. I work on both front-end and back-end to create solid, efficient, and user-friendly solutions.",
+      description: "I’m a Full-Stack Developer with 4+ years of experience building web applications. I work on both front-end and back-end to create solid, efficient, and user-friendly solutions.",
       button: "Projects"
     },
     project: {
@@ -46,7 +46,7 @@ const translations: Record<'es' | 'en', Translations> = {
       key: "Key Features",
     },
     skills: {
-      description: "Self-taught developer since 2022, with experience in building and maintaining professional projects using modern languages and frameworks.",
+      description: "Developer since 2021, with experience in building and maintaining professional projects using modern languages and frameworks.",
       languages: "Programming Languages",
       database: "DataBases",
       versionControl: "Version Control",

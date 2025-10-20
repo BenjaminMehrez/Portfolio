@@ -3,10 +3,7 @@ import useTranslation from "@/hooks/useTranslation";
 function Skills() {
   const { t } = useTranslation();
   return (
-    <section
-      id="skills"
-      className="max-w-6xl mx-auto mt-16 px-6 xl:px-0"
-    >
+    <section id="skills" className="max-w-6xl mx-auto mt-16 px-6 xl:px-0">
       <div className="space-y-12 py-10">
         <div className="space-y-4">
           <h3 className="font-bold text-3xl underline">Skills</h3>
@@ -23,6 +20,13 @@ function Skills() {
             >
               <img className="w-10" src="/react.svg" alt="nodejs" />
               <p className="font-semibold">React</p>
+            </div>
+            <div
+              className="flex items-center justify-center w-full sm:w-auto p-4 m-auto md:m-0 gap-3 rounded shadow-sm shadow-purple-900"
+              data-aos="zoom-in"
+            >
+              <img className="w-10" src="/next.png" alt="nodejs" />
+              <p className="font-semibold">NextJS</p>
             </div>
             <div
               className="flex items-center justify-center w-full sm:w-auto p-4 m-auto md:m-0 gap-3 rounded shadow-sm shadow-purple-900"
@@ -65,6 +69,13 @@ function Skills() {
             >
               <img className="w-10" src="/django.svg" alt="expressjs" />
               <p className="font-semibold">Django</p>
+            </div>
+            <div
+              className="flex items-center justify-center w-full sm:w-auto p-4 m-auto md:m-0 gap-3 rounded shadow-sm shadow-purple-900"
+              data-aos="zoom-in"
+            >
+              <img className="w-10" src="/fastapi.svg" alt="expressjs" />
+              <p className="font-semibold">FastAPI</p>
             </div>
           </div>
         </div>
