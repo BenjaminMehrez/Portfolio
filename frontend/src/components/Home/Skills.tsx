@@ -11,6 +11,34 @@ function Skills() {
         </div>
         <div className="text-center md:text-start">
           <h4 className="underline text-2xl mt-10 mb-7 font-semibold">
+            {t.skills.languages}
+          </h4>
+          <div className="flex sm:flex-row flex-col items-center gap-8 sm:gap-5">
+            <div
+              className="flex items-center justify-center w-full sm:w-auto p-4 m-auto md:m-0 gap-3 rounded shadow-sm shadow-purple-900"
+              data-aos="zoom-in"
+            >
+              <img className="w-10" src="/javascript.svg" alt="python" />
+              <p className="font-semibold">JavaScript</p>
+            </div>
+            <div
+              className="flex items-center justify-center w-full sm:w-auto p-4 m-auto md:m-0 gap-3 rounded shadow-sm shadow-purple-900"
+              data-aos="zoom-in"
+            >
+              <img className="w-10" src="/typescript.svg" alt="python" />
+              <p className="font-semibold">TypeScript</p>
+            </div>
+            <div
+              className="flex items-center justify-center w-full sm:w-auto p-4 m-auto md:m-0 gap-3 rounded shadow-sm shadow-purple-900"
+              data-aos="zoom-in"
+            >
+              <img className="w-10" src="/python.svg" alt="python" />
+              <p className="font-semibold">Python</p>
+            </div>
+          </div>
+        </div>
+        <div className="text-center md:text-start">
+          <h4 className="underline text-2xl mt-10 mb-7 font-semibold">
             Front-End
           </h4>
           <div className="flex sm:flex-row flex-col items-center gap-8 sm:gap-5">
@@ -76,34 +104,6 @@ function Skills() {
             >
               <img className="w-10" src="/fastapi.svg" alt="expressjs" />
               <p className="font-semibold">FastAPI</p>
-            </div>
-          </div>
-        </div>
-        <div className="text-center md:text-start">
-          <h4 className="underline text-2xl mt-10 mb-7 font-semibold">
-            {t.skills.languages}
-          </h4>
-          <div className="flex sm:flex-row flex-col items-center gap-8 sm:gap-5">
-            <div
-              className="flex items-center justify-center w-full sm:w-auto p-4 m-auto md:m-0 gap-3 rounded shadow-sm shadow-purple-900"
-              data-aos="zoom-in"
-            >
-              <img className="w-10" src="/python.svg" alt="python" />
-              <p className="font-semibold">Python</p>
-            </div>
-            <div
-              className="flex items-center justify-center w-full sm:w-auto p-4 m-auto md:m-0 gap-3 rounded shadow-sm shadow-purple-900"
-              data-aos="zoom-in"
-            >
-              <img className="w-10" src="/javascript.svg" alt="python" />
-              <p className="font-semibold">JavaScript</p>
-            </div>
-            <div
-              className="flex items-center justify-center w-full sm:w-auto p-4 m-auto md:m-0 gap-3 rounded shadow-sm shadow-purple-900"
-              data-aos="zoom-in"
-            >
-              <img className="w-10" src="/typescript.svg" alt="python" />
-              <p className="font-semibold">TypeScript</p>
             </div>
           </div>
         </div>
